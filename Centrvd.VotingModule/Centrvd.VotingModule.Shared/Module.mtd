@@ -1,0 +1,64 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "bd769f90-7dd7-4c38-8f46-cc8211ec82b5",
+  "Name": "VotingModule",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "Centrvd.VotingModule.Client",
+  "ClientBaseAssemblyName": "Centrvd.VotingModule.ClientBase",
+  "ClientBaseNamespace": "Centrvd.VotingModule.ClientBase",
+  "ClientNamespace": "Centrvd.VotingModule.Client",
+  "Code": "VotingM",
+  "CompanyCode": "Centrvd",
+  "Cover": {
+    "NameGuid": "53551f5b-3edd-4fe5-88b0-70ab9bf11403",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "5b2a2042-113a-4f8e-9119-60cafa0de12a",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "f6159242-ffb3-4881-b932-544b78cb619c",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "511cd529-f69a-47c7-a699-2bbf32f249d3",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "Centrvd.VotingModule",
+  "IsolatedAssemblyName": "Centrvd.VotingModule.Isolated",
+  "IsolatedNamespace": "Centrvd.VotingModule.Isolated",
+  "IsVisible": false,
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Centrvd.VotingModule",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "Centrvd.VotingModule.Server",
+  "ServerNamespace": "Centrvd.VotingModule.Server",
+  "SharedAssemblyName": "Centrvd.VotingModule.Shared",
+  "SharedNamespace": "Centrvd.VotingModule.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 9
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

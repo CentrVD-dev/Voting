@@ -59,6 +59,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DisplayName" xml:space="preserve">
-    <value>Голосование</value>
+    <value>End of Voting Notice</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>End of Voting Notice</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>End of Voting Notices</value>
   </data>
 </root>

@@ -31,6 +31,29 @@
       "IsSolutionModule": true,
       "MaxVersion": "",
       "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "25.1.0.52"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "3e766f58-5c7d-4876-8535-2d16d4de98cf",
+      "PreviousItemId": "d5cc5df7-e762-4ecb-b477-ae27dc95213f"
+    },
+    {
+      "ItemId": "16c27c8a-7562-43de-b4ba-0f0f4a212ad6",
+      "PreviousItemId": "3e766f58-5c7d-4876-8535-2d16d4de98cf"
+    },
+    {
+      "ItemId": "8075e5bb-ba8b-4bbd-859a-b0b4ede0d780",
+      "PreviousItemId": "16c27c8a-7562-43de-b4ba-0f0f4a212ad6"
+    },
+    {
+      "ItemId": "da769124-9cfa-43e6-aea3-62ac4dad55d3",
+      "PreviousItemId": "8075e5bb-ba8b-4bbd-859a-b0b4ede0d780"
     }
   ],
   "IconResourcesKeys": [],
@@ -40,6 +63,9 @@
   "IsolatedAssemblyName": "Centrvd.VotingModule.Isolated",
   "IsolatedNamespace": "Centrvd.VotingModule.Isolated",
   "IsVisible": false,
+  "Overridden": [
+    "IsVisible"
+  ],
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "Centrvd.VotingModule",

@@ -59,6 +59,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DisplayName" xml:space="preserve">
+    <value>Задача голосования</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Задачу голосования</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Задачи голосования</value>
+  </data>
+  <data name="AttachmentGroup_VotingGroupTitle" xml:space="preserve">
+    <value>Документы для голосования</value>
+  </data>
+  <data name="Block_eeb11a466c214de5bdc28ad415aee97f" xml:space="preserve">
+    <value>Подготовка голосования</value>
+  </data>
+  <data name="Block_96609994f46d47a9bd97fe4909ecd123" xml:space="preserve">
     <value>Голосование</value>
+  </data>
+  <data name="Block_0bf615629eab4f478c8342a22764b38f" xml:space="preserve">
+    <value>Уведомление о конце голосования</value>
   </data>
 </root>

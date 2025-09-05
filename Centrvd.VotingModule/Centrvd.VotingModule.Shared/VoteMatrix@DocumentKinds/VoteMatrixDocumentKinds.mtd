@@ -1,0 +1,58 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "6237ced6-f34e-4294-b9bf-3ffeef6ed219",
+  "Name": "VoteMatrixDocumentKinds",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "VoteMatrixDocu",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "6b7c91a3-f9c9-44ab-9195-f39ec7e4866b",
+      "Name": "VoteMatrix",
+      "CanBeSearch": false,
+      "Code": "VoteMatrix",
+      "EntityGuid": "ea2e4ed0-3e99-4911-bac4-51a60101c510",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "6d496088-0547-4511-8f3b-1b86c384a4ab",
+      "Name": "DocumentKind",
+      "CanBeSearch": false,
+      "Code": "DocumentKind",
+      "EntityGuid": "14a59623-89a2-4ea8-b6e9-2ad4365f358c",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "6b7c91a3-f9c9-44ab-9195-f39ec7e4866b"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "98614047-5b22-43f0-8e89-31af0877c606",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "325be30d-4372-470d-8405-a84bfb792a7f",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

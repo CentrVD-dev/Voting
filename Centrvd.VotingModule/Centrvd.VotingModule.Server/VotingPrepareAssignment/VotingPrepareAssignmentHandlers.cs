@@ -7,4 +7,13 @@ using Centrvd.VotingModule.VotingPrepareAssignment;
 
 namespace Centrvd.VotingModule
 {
+  partial class VotingPrepareAssignmentServerHandlers
+  {
+
+    public override void Created(Sungero.Domain.CreatedEventArgs e)
+    {
+      _obj.SameMatrixForAllPoints = true;
+    }
+  }
+
 }

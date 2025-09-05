@@ -32,13 +32,17 @@
     "Controls": [],
     "IsAncestorMetadata": true
   },
+  "HideFromCreationArea": true,
+  "HideFromNavigationEditorCreationArea": true,
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotingAssignment",
   "IsVisibleThreadText": true,
   "NeverLinkToParentWhenCreated": true,
   "OperationsClass": "",
   "Overridden": [
-    "AllowAddExecutionResults"
+    "AllowAddExecutionResults",
+    "HideFromNavigationEditorCreationArea",
+    "HideFromCreationArea"
   ],
   "Properties": [
     {

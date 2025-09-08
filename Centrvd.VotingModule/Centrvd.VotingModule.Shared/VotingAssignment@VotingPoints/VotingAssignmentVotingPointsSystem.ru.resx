@@ -67,4 +67,7 @@
   <data name="Property_Vote" xml:space="preserve">
     <value>Голос</value>
   </data>
+  <data name="Property_PointId" xml:space="preserve">
+    <value>Id пункта</value>
+  </data>
 </root>

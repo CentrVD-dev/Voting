@@ -34,7 +34,6 @@
       "Name": "Text",
       "CanBeSearch": false,
       "Code": "Text",
-      "IsRequired": true,
       "Length": 1000,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "3c7a4aed-19da-4d71-bc66-7b7c1b556c12"
@@ -49,7 +48,6 @@
       "HandledEvents": [
         "ChangedShared"
       ],
-      "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "a349c4e8-6ebb-4d23-accf-18f8c2f27639"
     },
@@ -73,7 +71,6 @@
       "HandledEvents": [
         "ChangedShared"
       ],
-      "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "0c1e84d0-5ee4-4a3a-88c0-b28a9cba644f"
     },

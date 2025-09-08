@@ -82,4 +82,7 @@
   <data name="Property_VotingResults" xml:space="preserve">
     <value>Результаты голосования</value>
   </data>
+  <data name="Property_Voters" xml:space="preserve">
+    <value>Голосующие</value>
+  </data>
 </root>

@@ -76,4 +76,13 @@
   <data name="Property_DocumentKinds" xml:space="preserve">
     <value>Виды документов</value>
   </data>
+  <data name="Action_ShowUsingAssignments" xml:space="preserve">
+    <value>Показать задания</value>
+  </data>
+  <data name="Action_ShowUsingAssignmentsHint" xml:space="preserve">
+    <value>Показать использующие задания</value>
+  </data>
+  <data name="Action_ShowUsingAssignmentsDescription" xml:space="preserve">
+    <value>Показать использующие задания</value>
+  </data>
 </root>

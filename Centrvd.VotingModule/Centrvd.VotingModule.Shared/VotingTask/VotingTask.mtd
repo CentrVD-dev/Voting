@@ -25,6 +25,9 @@
       "Name": "VotingPrepareAssignmentBlock",
       "BaseGuid": "9cc122a7-f93b-4053-9219-cd2f22af0365",
       "EntityType": "16c27c8a-7562-43de-b4ba-0f0f4a212ad6",
+      "HandledEvents": [
+        "VotingPrepareAssignmentBlockCompleteAssignment"
+      ],
       "ProcessStagesDisplayMode": "Show"
     },
     {
@@ -33,6 +36,9 @@
       "Name": "VotingAssignmentBlock",
       "BaseGuid": "9cc122a7-f93b-4053-9219-cd2f22af0365",
       "EntityType": "8075e5bb-ba8b-4bbd-859a-b0b4ede0d780",
+      "HandledEvents": [
+        "VotingAssignmentBlockStartAssignment"
+      ],
       "ProcessStagesDisplayMode": "Show"
     },
     {
@@ -129,6 +135,9 @@
       ]
     }
   ],
+  "HandledEvents": [
+    "BeforeStartServer"
+  ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotingTask",
   "IsVisibleThreadText": true,
@@ -158,6 +167,15 @@
       "EntityGuid": "940706b6-7c67-47a9-ba69-9ff4d77e42c4",
       "IsShowedInList": false,
       "PreviousPropertyGuid": "3364c324-c4c4-4ccb-a81c-53653255a022"
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1867c438-69e2-4601-8c80-bfef4d9d41cc",
+      "Name": "Voters",
+      "Code": "VotingTaskVote",
+      "EntityGuid": "58cc6190-8ff6-414b-9a33-947c97e419d2",
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "82bb70e6-a807-42cc-b84a-73c632b7f138"
     }
   ],
   "PublicStructures": [],

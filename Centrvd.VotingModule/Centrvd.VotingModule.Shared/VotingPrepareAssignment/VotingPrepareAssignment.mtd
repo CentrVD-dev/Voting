@@ -175,7 +175,12 @@
           "PropertyGuid": "5e0879dd-ce6e-497e-bfe1-946e07e2c5c7",
           "RowNumber": 2,
           "RowSpan": 1,
-          "Settings": []
+          "Settings": [
+            {
+              "Name": "NeedExpand",
+              "Value": true
+            }
+          ]
         },
         {
           "$type": "Sungero.Metadata.LabelControlMetadata, Sungero.Metadata",

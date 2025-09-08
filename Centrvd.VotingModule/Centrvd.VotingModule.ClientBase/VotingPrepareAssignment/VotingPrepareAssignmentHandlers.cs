@@ -31,6 +31,10 @@ namespace Centrvd.VotingModule
       _obj.State.Properties.VotingPoints.Properties.VotersNames.IsVisible = !sameVotersMatrix;
       _obj.State.Properties.VotingPoints.Properties.VotersMatrix.IsVisible = !sameVotersMatrix;
       _obj.State.Properties.VotersLabel.IsVisible = sameVotersMatrix;
+      
+      _obj.State.Properties.VotingPoints.Properties.Text.IsRequired = true;
+      _obj.State.Properties.VotingPoints.Properties.VotesMatrix.IsRequired = true;
+      _obj.State.Properties.VotingPoints.Properties.VotersMatrix.IsRequired = true;
     }
 
     public virtual void SameVoterMatrixValueInput(Sungero.Presentation.BooleanValueInputEventArgs e)

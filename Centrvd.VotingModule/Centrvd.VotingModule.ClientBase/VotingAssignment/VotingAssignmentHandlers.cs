@@ -10,5 +10,10 @@ namespace Centrvd.VotingModule
   partial class VotingAssignmentClientHandlers
   {
 
+    public override void Refresh(Sungero.Presentation.FormRefreshEventArgs e)
+    {
+      _obj.State.Properties.VotingPoints.Properties.Vote.IsRequired = true;
+    }
+
   }
 }

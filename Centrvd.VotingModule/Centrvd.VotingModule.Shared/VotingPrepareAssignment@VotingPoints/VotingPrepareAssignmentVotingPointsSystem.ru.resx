@@ -58,13 +58,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Property_VoteMatrix" xml:space="preserve">
-    <value>Матрица голосования</value>
+  <data name="Property_VotesMatrix" xml:space="preserve">
+    <value>Матрица голосов</value>
   </data>
-  <data name="Property_VoteKinds" xml:space="preserve">
+  <data name="Property_VotesKinds" xml:space="preserve">
     <value>Варианты голосов</value>
   </data>
   <data name="Property_Text" xml:space="preserve">
     <value>Текст</value>
+  </data>
+  <data name="Property_VotersMatrix" xml:space="preserve">
+    <value>Матрица голосующих</value>
+  </data>
+  <data name="Property_VotersNames" xml:space="preserve">
+    <value>Имена голосующих</value>
   </data>
 </root>

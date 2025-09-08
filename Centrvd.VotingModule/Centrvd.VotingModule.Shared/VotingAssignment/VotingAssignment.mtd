@@ -60,6 +60,15 @@
       "Overridden": [
         "Values"
       ]
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "ace2e0ba-4d64-4e12-96e0-b017ce417c13",
+      "Name": "VotingPoints",
+      "Code": "VotingAssignme",
+      "EntityGuid": "cc1ecaa2-ddd1-4461-b2e8-58ddfeff7355",
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "e349ae2e-71f9-4f87-be0b-bbec6f60edbe"
     }
   ],
   "PublicStructures": [],

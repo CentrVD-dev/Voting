@@ -149,6 +149,15 @@
       "Overridden": [
         "EntityGuid"
       ]
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "82bb70e6-a807-42cc-b84a-73c632b7f138",
+      "Name": "VotingResults",
+      "Code": "VotingTaskVoti",
+      "EntityGuid": "940706b6-7c67-47a9-ba69-9ff4d77e42c4",
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "3364c324-c4c4-4ccb-a81c-53653255a022"
     }
   ],
   "PublicStructures": [],

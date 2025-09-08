@@ -58,6 +58,7 @@
       ]
     }
   ],
+  "HideFromCreationArea": true,
   "HideFromNavigationEditorCreationArea": true,
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVoteKind",
@@ -65,7 +66,8 @@
   "OperationsClass": "",
   "Overridden": [
     "IsStatusEnabled",
-    "HideFromNavigationEditorCreationArea"
+    "HideFromNavigationEditorCreationArea",
+    "HideFromCreationArea"
   ],
   "Properties": [
     {

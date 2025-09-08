@@ -149,6 +149,14 @@
           "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
           "NameGuid": "b0f02ba9-5338-48f4-ad55-a1e523302e3f",
           "Name": "VotingGroup",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 50.0
+            },
+            {
+              "Percentage": 50.0
+            }
+          ],
           "ColumnNumber": 0,
           "ColumnSpan": 1,
           "ParentGuid": "2843c476-ecee-44d3-a088-69784756d9f0",
@@ -157,28 +165,71 @@
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "19bf75bb-cdf3-4dd0-be2f-8ed747dce29e",
-          "Name": "Matrix",
+          "NameGuid": "fa6da8bb-27b2-4693-8a49-e599b1d62450",
+          "Name": "Points",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
+          "HeaderLocation": "None",
+          "ParentGuid": "b0f02ba9-5338-48f4-ad55-a1e523302e3f",
+          "PropertyGuid": "5e0879dd-ce6e-497e-bfe1-946e07e2c5c7",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.LabelControlMetadata, Sungero.Metadata",
+          "NameGuid": "109a1952-ab6a-43b2-946b-b28470a0c45f",
+          "Name": "VotesLabel",
           "ColumnNumber": 0,
           "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.LabelToTextSourceBinder",
+          "HeaderLocation": "None",
           "ParentGuid": "b0f02ba9-5338-48f4-ad55-a1e523302e3f",
-          "PropertyGuid": "a50d693b-6052-48ce-bec7-dfe06b5e25a4",
+          "PropertyGuid": "163eaa7b-62c3-4689-b78a-fa417d6e3b09",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.LabelControlMetadata, Sungero.Metadata",
+          "NameGuid": "d664ad07-5b85-40c5-a588-855789cf4c3e",
+          "Name": "VotersLabel",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.LabelToTextSourceBinder",
+          "HeaderLocation": "None",
+          "ParentGuid": "b0f02ba9-5338-48f4-ad55-a1e523302e3f",
+          "PropertyGuid": "72dff14e-3a03-412b-9128-24cc7ed69520",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "1a150c12-5f5c-44bb-8acf-e2d023490d0b",
+          "Name": "VotesMatrix",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "HeaderLocation": "Top",
+          "ParentGuid": "b0f02ba9-5338-48f4-ad55-a1e523302e3f",
+          "PropertyGuid": "8fcb7649-cbdd-44aa-bb92-628af78b1645",
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "fa6da8bb-27b2-4693-8a49-e599b1d62450",
-          "Name": "Points",
-          "ColumnNumber": 0,
+          "NameGuid": "15c9f299-416d-4e5e-9135-82ccc18a4a17",
+          "Name": "VoterMatrix",
+          "ColumnNumber": 1,
           "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
-          "HeaderLocation": "None",
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "HeaderLocation": "Top",
           "ParentGuid": "b0f02ba9-5338-48f4-ad55-a1e523302e3f",
-          "PropertyGuid": "5e0879dd-ce6e-497e-bfe1-946e07e2c5c7",
-          "RowNumber": 1,
+          "PropertyGuid": "e02404ed-e069-4a94-9177-b1df2f138e48",
+          "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
         }
@@ -190,7 +241,8 @@
     }
   ],
   "HandledEvents": [
-    "CreatedServer"
+    "CreatedServer",
+    "RefreshClient"
   ],
   "HideFromCreationArea": true,
   "HideFromNavigationEditorCreationArea": true,
@@ -237,13 +289,64 @@
     {
       "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
       "NameGuid": "a50d693b-6052-48ce-bec7-dfe06b5e25a4",
-      "Name": "SameMatrixForAllPoints",
-      "Code": "SameMatrixForA",
+      "Name": "SameVoteMatrix",
+      "Code": "SameVoteMatrix",
       "HandledEvents": [
         "ValueInputClient"
       ],
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
       "PreviousPropertyGuid": "5e0879dd-ce6e-497e-bfe1-946e07e2c5c7"
+    },
+    {
+      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8f81b1e0-4d99-4cde-8c97-194b33cfa76e",
+      "Name": "SameVoterMatrix",
+      "Code": "SameVoterMatri",
+      "HandledEvents": [
+        "ValueInputClient"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+      "PreviousPropertyGuid": "a50d693b-6052-48ce-bec7-dfe06b5e25a4"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "163eaa7b-62c3-4689-b78a-fa417d6e3b09",
+      "Name": "VotesLabel",
+      "Code": "VotesLabel",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "8f81b1e0-4d99-4cde-8c97-194b33cfa76e"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "72dff14e-3a03-412b-9128-24cc7ed69520",
+      "Name": "VotersLabel",
+      "Code": "VotersLabel",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "163eaa7b-62c3-4689-b78a-fa417d6e3b09"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8fcb7649-cbdd-44aa-bb92-628af78b1645",
+      "Name": "VotesMatrix",
+      "Code": "VotesMatrix",
+      "EntityGuid": "ea2e4ed0-3e99-4911-bac4-51a60101c510",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "72dff14e-3a03-412b-9128-24cc7ed69520"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "e02404ed-e069-4a94-9177-b1df2f138e48",
+      "Name": "VotersMatrix",
+      "Code": "VotersMatrix",
+      "EntityGuid": "a33dca69-3f65-4a1a-a338-ee63a9539db5",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "8fcb7649-cbdd-44aa-bb92-628af78b1645"
     }
   ],
   "PublicStructures": [],

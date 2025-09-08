@@ -82,4 +82,7 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Задания голосования</value>
   </data>
+  <data name="Property_VotingPoints" xml:space="preserve">
+    <value>Пункты голосования</value>
+  </data>
 </root>

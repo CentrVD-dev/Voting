@@ -85,8 +85,8 @@
   <data name="Property_VotingPoints" xml:space="preserve">
     <value>Пункты голосования</value>
   </data>
-  <data name="Property_SameMatrixForAllPoints" xml:space="preserve">
-    <value>Одинаковая матрица для всех пунктов</value>
+  <data name="Property_SameVoteMatrix" xml:space="preserve">
+    <value>Единая матрица голосов</value>
   </data>
   <data name="Resource_ad03c4af7bfe4967aa2cdaa3265bdbe3" xml:space="preserve">
     <value />
@@ -114,5 +114,20 @@
   </data>
   <data name="Control_45c3f7afea6f40948e21e643b6358f4a_EmptyText" xml:space="preserve">
     <value />
+  </data>
+  <data name="Property_SameVoterMatrix" xml:space="preserve">
+    <value>Единая матрица голосующих</value>
+  </data>
+  <data name="Property_VotesLabel" xml:space="preserve">
+    <value>Метка голосов</value>
+  </data>
+  <data name="Property_VotersLabel" xml:space="preserve">
+    <value>Метка голосующих</value>
+  </data>
+  <data name="Property_VotesMatrix" xml:space="preserve">
+    <value>Единая матрица голосов</value>
+  </data>
+  <data name="Property_VotersMatrix" xml:space="preserve">
+    <value>Единая матрица голосующих</value>
   </data>
 </root>

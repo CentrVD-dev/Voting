@@ -82,4 +82,7 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Voting Assignments</value>
   </data>
+  <data name="Property_VotingPoints" xml:space="preserve">
+    <value>Voting points</value>
+  </data>
 </root>

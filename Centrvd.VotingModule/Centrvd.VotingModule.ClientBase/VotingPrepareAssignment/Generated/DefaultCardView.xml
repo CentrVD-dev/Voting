@@ -24,20 +24,48 @@
         <property name="SortInfo" iskey="true" value="0" />
         <property name="GroupSummary" iskey="true" value="0" />
         <property name="GroupCount">0</property>
-        <property name="Columns" iskey="true" value="2">
+        <property name="Columns" iskey="true" value="6">
           <property name="Item1" isnull="true" iskey="true">
             <property name="Visible">true</property>
-            <property name="Name">VotingPrepareAssignment_VotingPoints_Text</property>
-            <property name="FieldName">Text</property>
+            <property name="Name">VotingPrepareAssignment_VotingPoints_Number</property>
+            <property name="FieldName">Number</property>
             <property name="VisibleIndex">0</property>
             <property name="ActualWidth">NaN</property>
           </property>
           <property name="Item2" isnull="true" iskey="true">
             <property name="Visible">true</property>
-            <property name="Name">VotingPrepareAssignment_VotingPoints_VoteMatrix</property>
-            <property name="FieldName">VoteMatrix</property>
+            <property name="Name">VotingPrepareAssignment_VotingPoints_Text</property>
+            <property name="FieldName">Text</property>
             <property name="VisibleIndex">1</property>
-            <property name="ActualWidth">19*</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item3" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">VotingPrepareAssignment_VotingPoints_VotesMatrix</property>
+            <property name="FieldName">VotesMatrix</property>
+            <property name="VisibleIndex">2</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item4" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">VotingPrepareAssignment_VotingPoints_VotesKinds</property>
+            <property name="FieldName">VotesKinds</property>
+            <property name="VisibleIndex">3</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item5" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">VotingPrepareAssignment_VotingPoints_VotersMatrix</property>
+            <property name="FieldName">VotersMatrix</property>
+            <property name="VisibleIndex">4</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item6" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">VotingPrepareAssignment_VotingPoints_VotersNames</property>
+            <property name="FieldName">VotersNames</property>
+            <property name="VisibleIndex">5</property>
+            <property name="ActualWidth">NaN</property>
           </property>
         </property>
         <property name="GroupSummarySortInfo" iskey="true" value="0" />

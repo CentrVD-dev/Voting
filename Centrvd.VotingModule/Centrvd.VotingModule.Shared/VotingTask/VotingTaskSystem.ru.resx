@@ -79,4 +79,7 @@
   <data name="Block_0bf615629eab4f478c8342a22764b38f" xml:space="preserve">
     <value>Уведомление о конце голосования</value>
   </data>
+  <data name="Property_VotingResults" xml:space="preserve">
+    <value>Результаты голосования</value>
+  </data>
 </root>

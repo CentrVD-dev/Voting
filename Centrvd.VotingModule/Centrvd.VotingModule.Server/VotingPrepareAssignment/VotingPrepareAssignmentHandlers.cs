@@ -12,7 +12,9 @@ namespace Centrvd.VotingModule
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)
     {
-      _obj.SameMatrixForAllPoints = true;
+//      _obj.SameVoteMatrix = true;
+//      _obj.SameVoterMatrix = true;
+      
     }
   }
 

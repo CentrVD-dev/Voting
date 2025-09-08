@@ -8,4 +8,5 @@ using Centrvd.VotingModule.VotingTask;
 
 namespace Centrvd.VotingModule.Server.VotingTaskBlocks
 {
+
 }

@@ -2,6 +2,26 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "ea2e4ed0-3e99-4911-bac4-51a60101c510",
   "Name": "VotesMatrix",
+  "Actions": [
+    {
+      "NameGuid": "18cdb157-e89a-488b-8cea-bce6a63d0a13",
+      "Name": "DeleteEntity",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "NeedConfirmation": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    },
+    {
+      "NameGuid": "de6a685b-eb46-4b51-95d0-ab238b88c949",
+      "Name": "ShowUsingAssignments",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
+    }
+  ],
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
   "CanBeNavigationPropertyType": true,
   "Code": "VotesMatrix",
@@ -93,6 +113,9 @@
         }
       ]
     }
+  ],
+  "HandledEvents": [
+    "ShowingClient"
   ],
   "HideFromCreationArea": true,
   "HideFromNavigationEditorCreationArea": true,

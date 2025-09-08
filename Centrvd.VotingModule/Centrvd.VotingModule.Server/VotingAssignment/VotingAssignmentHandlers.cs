@@ -12,7 +12,9 @@ namespace Centrvd.VotingModule
 
     public virtual IQueryable<T> VotingPointsVoteFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)
     {
-      return query;
+      var matrixVariants = _obj.VoteMatrix.Variants.Select(v => v.VoteKind).ToList();
+      
+      return query.Where(q => matrixVariants.Contains(q)).OrderByDescending(q => q.Name);
     }
   }
 

@@ -76,4 +76,19 @@
   <data name="Property_DocumentKinds" xml:space="preserve">
     <value>Document kinds</value>
   </data>
+  <data name="Action_ShowUsingAssignments" xml:space="preserve">
+    <value>Show assignments</value>
+  </data>
+  <data name="Action_ShowUsingAssignmentsDescription" xml:space="preserve">
+    <value>Show using assignments</value>
+  </data>
+  <data name="Action_ShowUsingAssignmentsHint" xml:space="preserve">
+    <value>Show using assignments</value>
+  </data>
+  <data name="Action_ShowUsingAssignmentsConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowUsingAssignmentsConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>

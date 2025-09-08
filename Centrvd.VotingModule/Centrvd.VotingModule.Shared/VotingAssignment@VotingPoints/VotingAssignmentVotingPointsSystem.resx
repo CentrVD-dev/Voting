@@ -70,4 +70,7 @@
   <data name="Property_Vote" xml:space="preserve">
     <value>Vote</value>
   </data>
+  <data name="Property_PointId" xml:space="preserve">
+    <value>Point id</value>
+  </data>
 </root>

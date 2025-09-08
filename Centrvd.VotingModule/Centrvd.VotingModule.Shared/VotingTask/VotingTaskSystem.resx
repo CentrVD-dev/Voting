@@ -85,4 +85,7 @@
   <data name="Property_VotingResults" xml:space="preserve">
     <value>Voting results</value>
   </data>
+  <data name="Property_Voters" xml:space="preserve">
+    <value>Voters</value>
+  </data>
 </root>

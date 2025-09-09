@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
-using Centrvd.VotingModule.VotersMatix;
+using Centrvd.VotingModule.VotersMatrix;
 
-namespace Centrvd.VotingModule.Server
+namespace Centrvd.VotingModule
 {
-  partial class VotersMatixFunctions
+  partial class VotersMatrixSharedHandlers
   {
 
   }

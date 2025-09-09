@@ -1,47 +1,48 @@
 {
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
-  "NameGuid": "7332c1c3-6b7f-494b-8077-d457ad9d77b6",
-  "Name": "VotersMatixEmployees",
+  "NameGuid": "a87fdce2-377a-4a22-a31e-4b348cb99b67",
+  "Name": "VotersMatrixRoles",
   "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
   "CanBeNavigationPropertyType": true,
-  "Code": "VotersMatixEmp",
+  "Code": "VotersMatrixRo",
   "ExtraSearchProperties": [],
+  "IntegrationServiceName": "VotersMatixRoles",
   "IsChildEntity": true,
   "Properties": [
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "bb0a1c7a-729a-42db-8dea-2877be58297d",
-      "Name": "VotersMatix",
+      "NameGuid": "2ed53971-d989-4027-9bde-992821fdddcc",
+      "Name": "VotersMatrix",
       "CanBeSearch": false,
-      "Code": "VotersMatix",
+      "Code": "VotersMatrix",
       "EntityGuid": "a33dca69-3f65-4a1a-a338-ee63a9539db5",
       "IsReferenceToRootEntity": true,
       "IsShowedInList": false
     },
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "d28bada7-94e7-4db6-92b6-d78902133865",
-      "Name": "Employee",
+      "NameGuid": "f0012a12-4444-46b9-b187-97fe76b31dd9",
+      "Name": "Role",
       "CanBeSearch": false,
-      "Code": "Employee",
-      "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
+      "Code": "Role",
+      "EntityGuid": "5e9b55c2-c1f5-4e4f-aa09-7b6d461d87ed",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
-      "PreviousPropertyGuid": "bb0a1c7a-729a-42db-8dea-2877be58297d"
+      "PreviousPropertyGuid": "2ed53971-d989-4027-9bde-992821fdddcc"
     },
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "ab70ce02-64e4-4fa2-9c90-f71a2ca27cb4",
-      "Name": "Department",
+      "NameGuid": "a2bb318a-6901-4f91-8b03-f7bcd38bac11",
+      "Name": "ComputedRole",
       "CanBeSearch": false,
-      "Code": "Department",
-      "EntityGuid": "61b1c19f-26e2-49a5-b3d3-0d3618151e12",
+      "Code": "ComputedRole",
+      "EntityGuid": "4eee364b-a766-4a5f-8fbd-91e45c5f95ca",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
-      "PreviousPropertyGuid": "d28bada7-94e7-4db6-92b6-d78902133865"
+      "PreviousPropertyGuid": "f0012a12-4444-46b9-b187-97fe76b31dd9"
     }
   ],
   "PublicStructures": [],
   "RibbonCardMetadata": {
-    "NameGuid": "71755b6c-416f-4815-b90b-0f7ba233f478",
+    "NameGuid": "660bc9df-117d-4350-91c0-f0a7dd16c393",
     "Name": "RibbonCard",
     "Categories": [],
     "Elements": [],
@@ -51,7 +52,7 @@
     "RibbonKind": "Card"
   },
   "RibbonCollectionMetadata": {
-    "NameGuid": "27e3739b-bf01-4c7e-b6f3-233582ee9b23",
+    "NameGuid": "a1054f4c-c24f-4c1c-9262-93de13cbed5e",
     "Name": "RibbonCollection",
     "Categories": [],
     "Elements": [],

@@ -68,6 +68,9 @@
       "PreviousItemId": "c18082c3-bbf3-413d-a6aa-de3b7f9e53da"
     }
   ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
   "IconResourcesKeys": [],
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",

@@ -80,9 +80,9 @@
     <value>Показать задания</value>
   </data>
   <data name="Action_ShowUsingAssignmentsHint" xml:space="preserve">
-    <value>Показать использующие задания</value>
+    <value>Показать использующие матрицу задания</value>
   </data>
   <data name="Action_ShowUsingAssignmentsDescription" xml:space="preserve">
-    <value>Показать использующие задания</value>
+    <value>Показать использующие матрицу задания</value>
   </data>
 </root>

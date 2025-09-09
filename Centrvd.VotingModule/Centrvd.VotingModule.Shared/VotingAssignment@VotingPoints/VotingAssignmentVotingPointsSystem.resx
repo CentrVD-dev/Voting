@@ -73,4 +73,7 @@
   <data name="Property_PointId" xml:space="preserve">
     <value>Point id</value>
   </data>
+  <data name="Property_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
 </root>

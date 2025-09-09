@@ -59,21 +59,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Property_Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Наименование</value>
   </data>
   <data name="DisplayName" xml:space="preserve">
-    <value>Voters Matix</value>
+    <value>Матрица голосующих</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Voters Matix</value>
+    <value>Матрицу голосующих</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Voters Matices</value>
+    <value>Матрицы голосующих</value>
   </data>
   <data name="Property_Employees" xml:space="preserve">
-    <value>Employees</value>
+    <value>Сотрудники</value>
   </data>
   <data name="Property_Roles" xml:space="preserve">
-    <value>Roles</value>
+    <value>Роли</value>
+  </data>
+  <data name="Action_ShowUsingAssignments" xml:space="preserve">
+    <value>Показать задания</value>
+  </data>
+  <data name="Action_ShowUsingAssignmentsHint" xml:space="preserve">
+    <value>Показать использующие матрицу задания</value>
+  </data>
+  <data name="Action_ShowUsingAssignmentsDescription" xml:space="preserve">
+    <value>Показать использующие матрицу задания</value>
   </data>
 </root>

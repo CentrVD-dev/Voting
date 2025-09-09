@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
-using Centrvd.VotingModule.VotesMatrix;
+using Centrvd.VotingModule.VotersMatrix;
 
 namespace Centrvd.VotingModule.Server
 {
-  partial class VotesMatrixFunctions
+  partial class VotersMatrixFunctions
   {
     /// <summary>
     /// Проверить, используется ли матрица в заданиях подготовки голосований.
@@ -16,9 +16,9 @@ namespace Centrvd.VotingModule.Server
     [Remote]
     public bool IsMatrixUsedInAssignments()
     {
-      return this.GetAssignmentsMatrixUsed().Any(); 
-//      Centrvd.VotingModule.VotingPrepareAssignments.GetAll()
-//        .Any(a => a.VotingPoints.Any(v => Equals(v.VotesMatrix, _obj)));
+      return this.GetAssignmentsMatrixUsed().Any();
+      //      Centrvd.VotingModule.VotingPrepareAssignments.GetAll()
+      //        .Any(a => a.VotingPoints.Any(v => Equals(v.VotesMatrix, _obj)));
     }
     
     /// <summary>
@@ -29,7 +29,7 @@ namespace Centrvd.VotingModule.Server
     public IQueryable<IVotingPrepareAssignment> GetAssignmentsMatrixUsed()
     {
       return Centrvd.VotingModule.VotingPrepareAssignments.GetAll()
-        .Where(a => a.VotingPoints.Any(v => Equals(v.VotesMatrix, _obj)));
+        .Where(a => a.VotingPoints.Any(v => Equals(v.VotersMatrix, _obj)));
     }
   }
 }

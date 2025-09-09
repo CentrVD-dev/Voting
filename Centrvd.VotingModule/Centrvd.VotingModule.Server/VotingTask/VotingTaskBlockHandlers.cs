@@ -8,8 +8,58 @@ using Centrvd.VotingModule.VotingTask;
 
 namespace Centrvd.VotingModule.Server.VotingTaskBlocks
 {
+  partial class VotingNotificationBlockHandlers
+  {
+
+    public virtual void VotingNotificationBlockStartNotice(Centrvd.VotingModule.IVotingNotification notice)
+    {
+      var groupedPoints = _obj.VotingResults.GroupBy(v => v.PointId);
+      foreach (var points in groupedPoints)
+      {
+        notice.VotingResults += points.First().Text + Environment.NewLine;
+        
+        var voteKinds = points.Select(v => v.Vote).Distinct().Cast<IVoteKind>().ToList();
+        var votesCount = "Итого по пункту: ";
+        foreach (var voteKind in voteKinds)
+          votesCount += voteKind.Name + " - " + points.Count(v => Equals(v.Vote, voteKind)) + ". ";
+        
+        notice.VotingResults += votesCount + Environment.NewLine;
+        
+        foreach (var point in points)
+        {
+          var performerName = point.Substituted != null ? point.Voter.Person.ShortName + " за " + point.Substituted.Person.ShortName : point.Voter.Person.ShortName;
+          var comment = !string.IsNullOrEmpty(point.Comment) ? ". Комментарий: " + point.Comment : string.Empty;
+          
+          notice.VotingResults += "- " + performerName + " - " + point.Vote.Name  + comment + Environment.NewLine;
+        }
+        
+        notice.VotingResults += Environment.NewLine;
+      }
+    }
+  }
+
   partial class VotingAssignmentBlockHandlers
   {
+
+    public virtual void VotingAssignmentBlockCompleteAssignment(Centrvd.VotingModule.IVotingAssignment assignment)
+    {
+      var performer = Sungero.Company.Employees.As(assignment.CompletedBy);
+      var substituted = Sungero.Company.Employees.As(assignment.Performer);
+      
+      if (performer == null || substituted == null)
+        return;
+      
+      foreach (var point in assignment.VotingPoints)
+      {
+        var result = _obj.VotingResults.AddNew();
+        result.PointId = point.PointId;
+        result.Text = point.Text;
+        result.Vote = point.Vote;
+        result.Substituted = !Equals(performer, substituted) ? substituted : null;
+        result.Voter = performer;
+        result.Comment = point.Comment;
+      }
+    }
 
     public virtual void VotingAssignmentBlockStartAssignment(Centrvd.VotingModule.IVotingAssignment assignment)
     {
@@ -21,7 +71,7 @@ namespace Centrvd.VotingModule.Server.VotingTaskBlocks
 
       foreach (var point in prepareAssignment.VotingPoints)
       {
-        var matrixEmployees = Centrvd.VotingModule.Functions.VotersMatix.CalculateEmployeesFromMatrix(point.VotersMatrix, _obj);
+        var matrixEmployees = Centrvd.VotingModule.Functions.VotersMatrix.CalculateEmployeesFromMatrix(point.VotersMatrix, _obj);
         if (matrixEmployees.Contains(performer))
         {
           var newPoint = assignment.VotingPoints.AddNew();
@@ -44,7 +94,7 @@ namespace Centrvd.VotingModule.Server.VotingTaskBlocks
       
       // Заполнить всех уникальных голосующих в задачу.
       foreach (var point in assignment.VotingPoints)
-        voters.AddRange(Centrvd.VotingModule.Functions.VotersMatix.CalculateEmployeesFromMatrix(point.VotersMatrix, votingTask));
+        voters.AddRange(Centrvd.VotingModule.Functions.VotersMatrix.CalculateEmployeesFromMatrix(point.VotersMatrix, votingTask));
       
       foreach (var voter in voters.Distinct())
         _obj.Voters.AddNew().Voter = voter;

@@ -76,4 +76,10 @@
   <data name="Property_Vote" xml:space="preserve">
     <value>Vote</value>
   </data>
+  <data name="Property_Substituted" xml:space="preserve">
+    <value>Substituted</value>
+  </data>
+  <data name="Property_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
 </root>

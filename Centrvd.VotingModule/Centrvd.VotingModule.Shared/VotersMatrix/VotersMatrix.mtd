@@ -1,10 +1,30 @@
 {
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "a33dca69-3f65-4a1a-a338-ee63a9539db5",
-  "Name": "VotersMatix",
+  "Name": "VotersMatrix",
+  "Actions": [
+    {
+      "NameGuid": "18cdb157-e89a-488b-8cea-bce6a63d0a13",
+      "Name": "DeleteEntity",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "NeedConfirmation": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    },
+    {
+      "NameGuid": "5e6d0b3b-d75f-4fe2-ac32-d7a9f169bde8",
+      "Name": "ShowUsingAssignments",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
+    }
+  ],
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
   "CanBeNavigationPropertyType": true,
-  "Code": "VotersMatix",
+  "Code": "VotersMatrix",
   "CreationAreaMetadata": {
     "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
     "Name": "CreationArea",
@@ -112,6 +132,9 @@
       ]
     }
   ],
+  "HandledEvents": [
+    "ShowingClient"
+  ],
   "HideFromCreationArea": true,
   "HideFromNavigationEditorCreationArea": true,
   "IconResourcesKeys": [],
@@ -150,7 +173,7 @@
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "7ce114bb-bf2e-4c52-983c-bb1833e14051",
       "Name": "Employees",
-      "Code": "VotersMatixEmp",
+      "Code": "VotersMatrixEm",
       "EntityGuid": "7332c1c3-6b7f-494b-8077-d457ad9d77b6",
       "IsShowedInList": false,
       "PreviousPropertyGuid": "b45b7554-65ff-447f-9d4f-01bf0ce80c26"
@@ -159,7 +182,7 @@
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "987b844c-8e4a-4325-aa31-56bdfb1c5aba",
       "Name": "Roles",
-      "Code": "VotersMatixRol",
+      "Code": "VotersMatrixRo",
       "EntityGuid": "a87fdce2-377a-4a22-a31e-4b348cb99b67",
       "IsShowedInList": false,
       "PreviousPropertyGuid": "7ce114bb-bf2e-4c52-983c-bb1833e14051"

@@ -9,6 +9,7 @@
       "NameGuid": "d0197da6-3d02-4f79-b769-d6714221110e",
       "Name": "Complete",
       "ActionArea": "Card",
+      "AllowUserDisableConfirmation": true,
       "GenerateHandler": true,
       "LargeIconName": "Action_Complete_large_d0197da63d024f79b769d6714221110e.png",
       "NeedConfirmation": true,

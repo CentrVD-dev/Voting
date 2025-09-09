@@ -2,6 +2,26 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "c18082c3-bbf3-413d-a6aa-de3b7f9e53da",
   "Name": "VoteKind",
+  "Actions": [
+    {
+      "NameGuid": "18cdb157-e89a-488b-8cea-bce6a63d0a13",
+      "Name": "DeleteEntity",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "NeedConfirmation": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    },
+    {
+      "NameGuid": "6159230d-1349-436c-9cce-c8190bdabb41",
+      "Name": "ShowUsingMatrices",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
+    }
+  ],
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
   "CanBeNavigationPropertyType": true,
   "Code": "VoteKind",
@@ -58,6 +78,9 @@
       ]
     }
   ],
+  "HandledEvents": [
+    "ShowingClient"
+  ],
   "HideFromCreationArea": true,
   "HideFromNavigationEditorCreationArea": true,
   "IconResourcesKeys": [],
@@ -109,7 +132,21 @@
     "NameGuid": "c258bae9-d701-4c15-8506-56780299e2b4",
     "Name": "RibbonCollection",
     "Categories": [],
-    "Elements": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "07eef63c-3d22-4643-900d-082310732f2c",
+        "Name": "DeleteEntities",
+        "ActionGuid": "9f70df4c-99a1-4c55-bbd8-dd6c7727a479",
+        "Index": 40,
+        "IsAncestorMetadata": true,
+        "IsVisible": false,
+        "Overridden": [
+          "IsVisible"
+        ],
+        "ParentGuid": "b88b0a3a-c1ca-4f7f-80a0-336cd61c9c94"
+      }
+    ],
     "Groups": [],
     "IsAncestorMetadata": true,
     "Pages": []

@@ -70,4 +70,13 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Виды голосов</value>
   </data>
+  <data name="Action_ShowUsingMatrices" xml:space="preserve">
+    <value>Показать матрицы</value>
+  </data>
+  <data name="Action_ShowUsingMatricesHint" xml:space="preserve">
+    <value>Показать использующие матрицы голосов</value>
+  </data>
+  <data name="Action_ShowUsingMatricesDescription" xml:space="preserve">
+    <value>Показать использующие матрицы голосов</value>
+  </data>
 </root>

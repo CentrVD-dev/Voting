@@ -70,4 +70,7 @@
   <data name="Property_PointId" xml:space="preserve">
     <value>Id пункта</value>
   </data>
+  <data name="Property_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
 </root>

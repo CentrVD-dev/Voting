@@ -80,10 +80,10 @@
     <value>Show assignments</value>
   </data>
   <data name="Action_ShowUsingAssignmentsDescription" xml:space="preserve">
-    <value>Show using assignments</value>
+    <value>Show using matrix assignments</value>
   </data>
   <data name="Action_ShowUsingAssignmentsHint" xml:space="preserve">
-    <value>Show using assignments</value>
+    <value>Show using matrix assignments</value>
   </data>
   <data name="Action_ShowUsingAssignmentsConfirmationMessage" xml:space="preserve">
     <value />

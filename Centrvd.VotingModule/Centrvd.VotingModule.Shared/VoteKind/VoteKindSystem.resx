@@ -70,4 +70,19 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Vote Kinds</value>
   </data>
+  <data name="Action_ShowUsingMatrices" xml:space="preserve">
+    <value>Show matrices</value>
+  </data>
+  <data name="Action_ShowUsingMatricesDescription" xml:space="preserve">
+    <value>Show using votes matrices</value>
+  </data>
+  <data name="Action_ShowUsingMatricesHint" xml:space="preserve">
+    <value>Show using votes matrices</value>
+  </data>
+  <data name="Action_ShowUsingMatricesConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowUsingMatricesConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>

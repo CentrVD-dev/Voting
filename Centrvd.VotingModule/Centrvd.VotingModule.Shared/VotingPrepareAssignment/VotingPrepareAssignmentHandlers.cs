@@ -22,7 +22,7 @@ namespace Centrvd.VotingModule
         votingPoint.VotersMatrix = e.NewValue;
       
       if (e.NewValue != null)
-        _obj.VotersLabel = "Голосующие: " + string.Join(", ", Centrvd.VotingModule.Functions.VotersMatix.CalculateEmployeesFromMatrix(e.NewValue, votingTask).Select(emp => emp.Person.ShortName));
+        _obj.VotersLabel = "Голосующие: " + string.Join(", ", Centrvd.VotingModule.Functions.VotersMatrix.CalculateEmployeesFromMatrix(e.NewValue, votingTask).Select(emp => emp.Person.ShortName));
       else
         _obj.VotersLabel = null;
     }
@@ -61,7 +61,7 @@ namespace Centrvd.VotingModule
       // Обновляем вычисленных голосующих.
       var votingTask = Centrvd.VotingModule.VotingTasks.As(_obj.VotingPrepareAssignment.Task);
       _obj.VotersNames = e.NewValue != null
-        ? string.Join(", ", Centrvd.VotingModule.Functions.VotersMatix.CalculateEmployeesFromMatrix(e.NewValue, votingTask).Select(emp => emp.Person.ShortName))
+        ? string.Join(", ", Centrvd.VotingModule.Functions.VotersMatrix.CalculateEmployeesFromMatrix(e.NewValue, votingTask).Select(emp => emp.Person.ShortName))
         : null;
     }
 

@@ -75,6 +75,15 @@
       "IsShowedInList": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
       "PreviousPropertyGuid": "49d7be8c-cb38-4df7-ba90-9b792c58970a"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "18345d51-7d2e-497b-ba8a-f2e35a4f87f8",
+      "Name": "Comment",
+      "CanBeSearch": false,
+      "Code": "Comment",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "dd1237e2-f2d0-49e6-8e3c-92afd94474b3"
     }
   ],
   "PublicStructures": [],

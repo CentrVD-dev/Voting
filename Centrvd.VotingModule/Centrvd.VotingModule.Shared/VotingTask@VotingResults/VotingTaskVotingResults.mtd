@@ -47,6 +47,7 @@
       "CanBeSearch": false,
       "Code": "Text",
       "IsEnabled": false,
+      "IsShowedInList": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "ab364880-7581-47c6-8d3c-5ba4a61f59bc"
     },
@@ -69,8 +70,33 @@
       "CanBeSearch": false,
       "Code": "Vote",
       "EntityGuid": "c18082c3-bbf3-413d-a6aa-de3b7f9e53da",
+      "IsEnabled": false,
+      "IsShowedInList": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "2ef7d5ad-da61-402d-91b8-d3b50641f626"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "40336eca-5d0e-442a-962f-4051e1470cd1",
+      "Name": "Substituted",
+      "CanBeSearch": false,
+      "Code": "Substituted",
+      "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "80f55bfb-a616-4cb3-a4f5-731d4c899c30"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "5d4aaadd-29d9-4b66-9775-464b6b89d030",
+      "Name": "Comment",
+      "CanBeSearch": false,
+      "Code": "Comment",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "40336eca-5d0e-442a-962f-4051e1470cd1"
     }
   ],
   "PublicStructures": [],

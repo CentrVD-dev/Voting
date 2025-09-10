@@ -4,7 +4,7 @@ using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
 
-namespace Centrvd.VotingModule.Structures.VotersMatix
+namespace Centrvd.VotingModule.Structures.VotersMatrix
 {
 
 }

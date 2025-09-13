@@ -32,9 +32,11 @@ namespace Centrvd.VotingModule.Server
       if (systemSetupResponsibleRole != null)
       {
         Centrvd.VotingModule.VotesMatrices.AccessRights.Grant(systemSetupResponsibleRole, DefaultAccessRightsTypes.Create);
+        Centrvd.VotingModule.VotesMatrices.AccessRights.Grant(systemSetupResponsibleRole, DefaultAccessRightsTypes.Change);
         Centrvd.VotingModule.VotesMatrices.AccessRights.Save();
         
         Centrvd.VotingModule.VotersMatrices.AccessRights.Grant(systemSetupResponsibleRole, DefaultAccessRightsTypes.Create);
+        Centrvd.VotingModule.VotersMatrices.AccessRights.Grant(systemSetupResponsibleRole, DefaultAccessRightsTypes.Change);
         Centrvd.VotingModule.VotersMatrices.AccessRights.Save();
       }
       

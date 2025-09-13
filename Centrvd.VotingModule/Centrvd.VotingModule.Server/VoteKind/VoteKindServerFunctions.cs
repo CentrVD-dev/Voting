@@ -14,11 +14,9 @@ namespace Centrvd.VotingModule.Server
     /// </summary>
     /// <returns>True, если испольуется. Иначе - false.</returns>
     [Remote]
-    public bool IsVoteKindUsedInMatrices()
+    public virtual bool IsVoteKindUsedInMatrices()
     {
       return this.GetMatricesVoteKindUsed().Any();
-      //      Centrvd.VotingModule.VotingPrepareAssignments.GetAll()
-      //        .Any(a => a.VotingPoints.Any(v => Equals(v.VotesMatrix, _obj)));
     }
     
     /// <summary>
@@ -26,10 +24,15 @@ namespace Centrvd.VotingModule.Server
     /// </summary>
     /// <returns>Список заданий.</returns>
     [Remote]
-    public IQueryable<IVotesMatrix> GetMatricesVoteKindUsed()
+    public virtual IQueryable<IVotesMatrix> GetMatricesVoteKindUsed()
     {
-      return Centrvd.VotingModule.VotesMatrices.GetAll()
-        .Where(a => a.Variants.Any(v => Equals(v.VoteKind, _obj)));
+      var matrices = Enumerable.Empty<Centrvd.VotingModule.IVotesMatrix>().AsQueryable();
+      Sungero.Core.AccessRights.AllowRead(() =>
+                                          {
+                                            matrices = Centrvd.VotingModule.VotesMatrices.GetAll()
+                                              .Where(a => a.Variants.Any(v => Equals(v.VoteKind, _obj)));
+                                          });
+      return matrices;
     }
   }
 }

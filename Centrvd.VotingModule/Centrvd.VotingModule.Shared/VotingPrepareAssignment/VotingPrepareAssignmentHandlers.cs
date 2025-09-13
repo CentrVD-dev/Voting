@@ -10,7 +10,7 @@ namespace Centrvd.VotingModule
   partial class VotingPrepareAssignmentSharedHandlers
   {
 
-    public virtual void VotersMatrixChanged(Centrvd.VotingModule.Shared.VotingPrepareAssignmentVotersMatrixChangedEventArgs e)
+    public virtual void UnitedVotersMatrixChanged(Centrvd.VotingModule.Shared.VotingPrepareAssignmentUnitedVotersMatrixChangedEventArgs e)
     {
       if (Equals(e.NewValue, e.OldValue))
         return;
@@ -27,7 +27,7 @@ namespace Centrvd.VotingModule
         _obj.VotersLabel = null;
     }
 
-    public virtual void VotesMatrixChanged(Centrvd.VotingModule.Shared.VotingPrepareAssignmentVotesMatrixChangedEventArgs e)
+    public virtual void UnitedVotesMatrixChanged(Centrvd.VotingModule.Shared.VotingPrepareAssignmentUnitedVotesMatrixChangedEventArgs e)
     {
       if (Equals(e.NewValue, e.OldValue))
         return;
@@ -50,14 +50,7 @@ namespace Centrvd.VotingModule
     {
       if (Equals(e.NewValue, e.OldValue))
         return;
-      
-      // Обновляем матрицы голосующих для всех пунктов, если требуется.
-      //      if (_obj.VotingPrepareAssignment.SameVoterMatrix == true)
-      //      {
-      //        foreach (var votingPoint in _obj.VotingPrepareAssignment.VotingPoints)
-      //          votingPoint.VotersMatrix = e.NewValue;
-      //      }
-      
+
       // Обновляем вычисленных голосующих.
       var votingTask = Centrvd.VotingModule.VotingTasks.As(_obj.VotingPrepareAssignment.Task);
       _obj.VotersNames = e.NewValue != null
@@ -69,13 +62,6 @@ namespace Centrvd.VotingModule
     {
       if (Equals(e.NewValue, e.OldValue))
         return;
-      
-      // Обновляем матрицы голосов для всех пунктов, если требуется.
-      //      if (_obj.VotingPrepareAssignment.SameVoteMatrix == true)
-      //      {
-      //        foreach (var votingPoint in _obj.VotingPrepareAssignment.VotingPoints)
-      //          votingPoint.VotesMatrix = e.NewValue;
-      //      }
 
       // Обновляем виды голосов.
       _obj.VotesKinds = e.NewValue != null
@@ -97,22 +83,11 @@ namespace Centrvd.VotingModule
     {
       _added.Number = (_obj.VotingPoints.Max(a => a.Number) ?? 0) + 1;
       
-      // Автозаполнение матриц голосов.
-      //      if (_obj.SameVoteMatrix == true && _obj.VotingPoints.Any())
-      //      {
-      //        var pointWithMatrix = _obj.VotingPoints.FirstOrDefault(p => p.VotesMatrix != null);
-      //        if (pointWithMatrix != null)
-      //          _added.VotesMatrix = pointWithMatrix.VotesMatrix;
-      //      }
+      if (_obj.UnitedVotesMatrix != null)
+        _added.VotesMatrix = _obj.UnitedVotesMatrix;
       
-      // Автозаполнение матриц голосующих.
-      //      if (_obj.SameVoterMatrix == true && _obj.VotingPoints.Any())
-      //      {
-      //        var pointWithMatrix = _obj.VotingPoints.FirstOrDefault(p => p.VotersMatrix != null);
-      //        if (pointWithMatrix != null)
-      //          _added.VotersMatrix = pointWithMatrix.VotersMatrix;
-      //      }
-      
+      if (_obj.UnitedVotersMatrix != null)
+        _added.VotersMatrix = _obj.UnitedVotersMatrix;
     }
   }
 }

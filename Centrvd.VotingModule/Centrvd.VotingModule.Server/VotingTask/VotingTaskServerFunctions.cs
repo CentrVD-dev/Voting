@@ -13,7 +13,7 @@ namespace Centrvd.VotingModule.Server
     /// Получение последнего задания подготовку голосования.
     /// </summary>
     /// <returns>Последнее задание на подготовку голосования.</returns>
-    public Centrvd.VotingModule.IVotingPrepareAssignment GetLastPrepareAssignment()
+    public virtual Centrvd.VotingModule.IVotingPrepareAssignment GetLastPrepareAssignment()
     {
       return Centrvd.VotingModule.VotingPrepareAssignments
         .GetAll(a => Equals(a.Task, _obj) && a.Created > _obj.Started)

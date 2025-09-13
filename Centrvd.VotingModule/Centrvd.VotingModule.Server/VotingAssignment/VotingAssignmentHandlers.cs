@@ -14,7 +14,7 @@ namespace Centrvd.VotingModule
     {
       var matrixVariants = _obj.VoteMatrix.Variants.Select(v => v.VoteKind).ToList();
       
-      return query.Where(q => matrixVariants.Contains(q)).OrderByDescending(q => q.Name);
+      return query.Where(q => matrixVariants.Contains(q));
     }
   }
 

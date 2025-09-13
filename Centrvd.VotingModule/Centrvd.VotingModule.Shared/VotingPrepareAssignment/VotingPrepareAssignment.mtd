@@ -292,34 +292,12 @@
       "PreviousPropertyGuid": "e349ae2e-71f9-4f87-be0b-bbec6f60edbe"
     },
     {
-      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "a50d693b-6052-48ce-bec7-dfe06b5e25a4",
-      "Name": "SameVoteMatrix",
-      "Code": "SameVoteMatrix",
-      "HandledEvents": [
-        "ValueInputClient"
-      ],
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
-      "PreviousPropertyGuid": "5e0879dd-ce6e-497e-bfe1-946e07e2c5c7"
-    },
-    {
-      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "8f81b1e0-4d99-4cde-8c97-194b33cfa76e",
-      "Name": "SameVoterMatrix",
-      "Code": "SameVoterMatri",
-      "HandledEvents": [
-        "ValueInputClient"
-      ],
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
-      "PreviousPropertyGuid": "a50d693b-6052-48ce-bec7-dfe06b5e25a4"
-    },
-    {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "163eaa7b-62c3-4689-b78a-fa417d6e3b09",
       "Name": "VotesLabel",
       "Code": "VotesLabel",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "8f81b1e0-4d99-4cde-8c97-194b33cfa76e"
+      "PreviousPropertyGuid": "5e0879dd-ce6e-497e-bfe1-946e07e2c5c7"
     },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
@@ -332,8 +310,8 @@
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
       "NameGuid": "8fcb7649-cbdd-44aa-bb92-628af78b1645",
-      "Name": "VotesMatrix",
-      "Code": "VotesMatrix",
+      "Name": "UnitedVotesMatrix",
+      "Code": "UnitedVotesMat",
       "EntityGuid": "ea2e4ed0-3e99-4911-bac4-51a60101c510",
       "HandledEvents": [
         "ChangedShared"
@@ -344,8 +322,8 @@
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
       "NameGuid": "e02404ed-e069-4a94-9177-b1df2f138e48",
-      "Name": "VotersMatrix",
-      "Code": "VotersMatrix",
+      "Name": "UnitedVotersMatrix",
+      "Code": "UnitedVotersMa",
       "EntityGuid": "a33dca69-3f65-4a1a-a338-ee63a9539db5",
       "HandledEvents": [
         "ChangedShared"

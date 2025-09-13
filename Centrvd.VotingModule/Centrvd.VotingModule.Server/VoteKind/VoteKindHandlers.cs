@@ -7,4 +7,6 @@ using Centrvd.VotingModule.VoteKind;
 
 namespace Centrvd.VotingModule
 {
+
+
 }

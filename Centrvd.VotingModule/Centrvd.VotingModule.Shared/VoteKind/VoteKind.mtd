@@ -86,11 +86,13 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVoteKind",
   "IsStatusEnabled": true,
+  "LookupMode": "Popup",
   "OperationsClass": "",
   "Overridden": [
     "IsStatusEnabled",
     "HideFromNavigationEditorCreationArea",
-    "HideFromCreationArea"
+    "HideFromCreationArea",
+    "LookupMode"
   ],
   "Properties": [
     {
@@ -138,6 +140,19 @@
         "NameGuid": "07eef63c-3d22-4643-900d-082310732f2c",
         "Name": "DeleteEntities",
         "ActionGuid": "9f70df4c-99a1-4c55-bbd8-dd6c7727a479",
+        "Index": 40,
+        "IsAncestorMetadata": true,
+        "IsVisible": false,
+        "Overridden": [
+          "IsVisible"
+        ],
+        "ParentGuid": "b88b0a3a-c1ca-4f7f-80a0-336cd61c9c94"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "36d11e82-ebe8-488c-8e3c-f81ee5469773",
+        "Name": "DeleteEntity",
+        "ActionGuid": "18cdb157-e89a-488b-8cea-bce6a63d0a13",
         "Index": 40,
         "IsAncestorMetadata": true,
         "IsVisible": false,

@@ -12,14 +12,12 @@ namespace Centrvd.VotingModule
 
     public override void Showing(Sungero.Presentation.FormShowingEventArgs e)
     {
-      e.Params.AddOrUpdate(Centrvd.VotingModule.Constants.VoteKind.UsedInMatrices, Centrvd.VotingModule.Functions.VoteKind.Remote.IsVoteKindUsedInMatrices(_obj));
-      
-      bool hasUsingMatrices = false;
-      e.Params.TryGetValue(Centrvd.VotingModule.Constants.VoteKind.UsedInMatrices, out hasUsingMatrices);
+      var hasUsingMatrices = Centrvd.VotingModule.Functions.VoteKind.Remote.IsVoteKindUsedInMatrices(_obj);
+      e.Params.AddOrUpdate(Centrvd.VotingModule.Constants.VoteKind.UsedInMatrices, hasUsingMatrices);
 
-      _obj.State.Properties.Name.IsEnabled = !hasUsingMatrices;
+      Centrvd.VotingModule.Functions.VoteKind.SetEnableProperties(_obj);
       
-      if (hasUsingMatrices)
+      if (hasUsingMatrices && _obj.AccessRights.CanUpdate())
         e.AddInformation("Вид голоса используется в матрицах голосов. Некоторые поля заблокированы от изменения.", _obj.Info.Actions.ShowUsingMatrices);
     }
 

@@ -85,9 +85,6 @@
   <data name="Property_VotingPoints" xml:space="preserve">
     <value>Voting points</value>
   </data>
-  <data name="Property_SameVoteMatrix" xml:space="preserve">
-    <value>The same vote matrix</value>
-  </data>
   <data name="Resource_ad03c4af7bfe4967aa2cdaa3265bdbe3" xml:space="preserve">
     <value />
   </data>
@@ -118,19 +115,16 @@
   <data name="ControlGroup_b0f02ba9533848f4ad55a1e523302e3f" xml:space="preserve">
     <value />
   </data>
-  <data name="Property_SameVoterMatrix" xml:space="preserve">
-    <value>The same voter matrix</value>
-  </data>
   <data name="Property_VotesLabel" xml:space="preserve">
     <value>Votes label</value>
   </data>
   <data name="Property_VotersLabel" xml:space="preserve">
     <value>Voters label</value>
   </data>
-  <data name="Property_VotesMatrix" xml:space="preserve">
-    <value>Votes matrix</value>
+  <data name="Property_UnitedVotesMatrix" xml:space="preserve">
+    <value>United votes matrix</value>
   </data>
-  <data name="Property_VotersMatrix" xml:space="preserve">
-    <value>Voters matrix</value>
+  <data name="Property_UnitedVotersMatrix" xml:space="preserve">
+    <value>United voters matrix</value>
   </data>
 </root>

@@ -25,6 +25,7 @@
       "CanBeSearch": false,
       "Code": "Number",
       "IsEnabled": false,
+      "IsSortingAllowed": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
       "PreviousPropertyGuid": "fae635d2-b075-46cd-a14b-72c4848b6455"
     },
@@ -35,6 +36,7 @@
       "CanBeSearch": false,
       "Code": "Text",
       "IsEnabled": false,
+      "IsSortingAllowed": false,
       "Length": 1000,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "02f613bf-d9d1-4d1c-987c-1e1bbe8a7278"
@@ -48,6 +50,7 @@
       "EntityGuid": "ea2e4ed0-3e99-4911-bac4-51a60101c510",
       "IsEnabled": false,
       "IsShowedInList": false,
+      "IsSortingAllowed": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "4346fb5c-b356-4935-ac90-12b54412ee89"
     },
@@ -61,6 +64,7 @@
       "HandledEvents": [
         "LookupServer"
       ],
+      "IsSortingAllowed": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "NeedPassEntityToLookupEvent": true,
       "PreviousPropertyGuid": "2e8aaa7a-e104-4840-a9a1-880358edccb3"
@@ -73,6 +77,7 @@
       "Code": "PointId",
       "IsEnabled": false,
       "IsShowedInList": false,
+      "IsSortingAllowed": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
       "PreviousPropertyGuid": "49d7be8c-cb38-4df7-ba90-9b792c58970a"
     },
@@ -82,6 +87,7 @@
       "Name": "Comment",
       "CanBeSearch": false,
       "Code": "Comment",
+      "IsSortingAllowed": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "dd1237e2-f2d0-49e6-8e3c-92afd94474b3"
     }

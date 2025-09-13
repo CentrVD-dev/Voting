@@ -14,7 +14,7 @@ namespace Centrvd.VotingModule.Shared
     /// </summary>
     /// <param name="task">Задача голосования.</param>
     /// <returns>сотрудников.</returns>
-    public List<Sungero.Company.IEmployee> CalculateEmployeesFromMatrix(Centrvd.VotingModule.IVotingTask votingTask)
+    public virtual List<Sungero.Company.IEmployee> CalculateEmployeesFromMatrix(Centrvd.VotingModule.IVotingTask votingTask)
     {
       var result = new List<Sungero.Company.IEmployee>();
       
@@ -49,6 +49,20 @@ namespace Centrvd.VotingModule.Shared
       }
       
       return result.Distinct().ToList();
+    }
+    
+    /// <summary>
+    /// Установить доступность свойств.
+    /// </summary>
+    public virtual void SetEnableProperties()
+    {
+      object hasUsingAssignments;
+      
+      if (((Sungero.Domain.Shared.IExtendedEntity)_obj).Params.TryGetValue(Centrvd.VotingModule.Constants.VotersMatrix.UsedInAssignments, out hasUsingAssignments))
+      {
+        _obj.State.Properties.Employees.IsEnabled = !(bool)hasUsingAssignments;
+        _obj.State.Properties.Roles.IsEnabled = !(bool)hasUsingAssignments;
+      }
     }
   }
 }

@@ -16,6 +16,19 @@
         "Title",
         "Description"
       ]
+    },
+    {
+      "NameGuid": "eb847f6f-fc7b-4816-a3c9-3aa7fce55ba8",
+      "Name": "VotingResultsGroup",
+      "Constraints": [
+        {
+          "NameGuid": "a579082b-a409-4b1b-9fe3-21dcaa614f92",
+          "Name": "OfficialDocuments",
+          "ConstraintTypeId": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1",
+          "Limit": 1
+        }
+      ],
+      "PreviousGroupId": "66c0cbb5-29a5-494e-bbef-16a99473fe7e"
     }
   ],
   "BaseGuid": "ef79164b-2ce7-451b-9ba6-eb59dd9a4a74",
@@ -156,6 +169,9 @@
         "SettingsResourceKey"
       ]
     }
+  ],
+  "HandledEvents": [
+    "ShowingClient"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotingNotification",

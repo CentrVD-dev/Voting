@@ -3,6 +3,16 @@
   "NameGuid": "bd769f90-7dd7-4c38-8f46-cc8211ec82b5",
   "Name": "VotingModule",
   "AsyncHandlers": [],
+  "Blocks": [
+    {
+      "$type": "Sungero.Metadata.TaskBlockMetadata, Sungero.Workflow.Shared",
+      "NameGuid": "f799224d-5c6c-4dc3-8041-6bbba48ac71e",
+      "Name": "TaskBlock",
+      "BaseGuid": "af11beb2-61e1-453f-9c69-93b9f06355ec",
+      "EntityType": "3e766f58-5c7d-4876-8535-2d16d4de98cf",
+      "ProcessStagesDisplayMode": "Show"
+    }
+  ],
   "ClientAssemblyName": "Centrvd.VotingModule.Client",
   "ClientBaseAssemblyName": "Centrvd.VotingModule.ClientBase",
   "ClientBaseNamespace": "Centrvd.VotingModule.ClientBase",

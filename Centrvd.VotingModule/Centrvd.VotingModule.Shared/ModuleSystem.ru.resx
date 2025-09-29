@@ -61,4 +61,10 @@
   <data name="DisplayName" xml:space="preserve">
     <value>Голосование</value>
   </data>
+  <data name="Block_f799224d5c6c4dc380416bbba48ac71e" xml:space="preserve">
+    <value>Задача голосования</value>
+  </data>
+  <data name="Block_f799224d5c6c4dc380416bbba48ac71e_Description" xml:space="preserve">
+    <value>Задача голосования</value>
+  </data>
 </root>

@@ -58,4 +58,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TitleVoter" xml:space="preserve">
+    <value>Voter</value>
+  </data>
+  <data name="TitleVote" xml:space="preserve">
+    <value>Vote</value>
+  </data>
+  <data name="TitleComment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="TitleResults" xml:space="preserve">
+    <value>Results: </value>
+  </data>
+  <data name="TitleFrom" xml:space="preserve">
+    <value> from </value>
+  </data>
+  <data name="TitleTitle" xml:space="preserve">
+    <value>Voting results report</value>
+  </data>
+  <data name="DescriptionSubject" xml:space="preserve">
+    <value>on topic: "{0}"</value>
+  </data>
+  <data name="DescriptionOnDocument" xml:space="preserve">
+    <value>on the document: </value>
+  </data>
 </root>

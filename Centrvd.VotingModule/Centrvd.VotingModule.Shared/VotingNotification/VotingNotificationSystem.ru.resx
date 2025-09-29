@@ -97,4 +97,7 @@
   <data name="ControlGroup_45512dfab9a84b3f95fb1a1aebd0e74c" xml:space="preserve">
     <value>Результаты голосования</value>
   </data>
+  <data name="AttachmentGroup_VotingResultsGroupTitle" xml:space="preserve">
+    <value>Результаты голосования</value>
+  </data>
 </root>

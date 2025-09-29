@@ -9,17 +9,16 @@ namespace Centrvd.VotingModule.Client
 {
   partial class VotingTaskActions
   {
-    public virtual void Report(Sungero.Domain.Client.ExecuteActionArgs e)
+    public virtual void CurrentResultsReport(Sungero.Domain.Client.ExecuteActionArgs e)
     {
       var report = Centrvd.VotingModule.Reports.GetVotingResultsReport();
       report.Entity = _obj;
-      report.TaskId = _obj.Id;
       report.Open();
     }
 
-    public virtual bool CanReport(Sungero.Domain.Client.CanExecuteActionArgs e)
+    public virtual bool CanCurrentResultsReport(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return true;
+      return Equals(Users.Current, _obj.Author) && !_obj.State.IsInserted;
     }
 
   }

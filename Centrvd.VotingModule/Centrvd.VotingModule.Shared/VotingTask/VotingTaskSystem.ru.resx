@@ -85,4 +85,19 @@
   <data name="Property_Voters" xml:space="preserve">
     <value>Голосующие</value>
   </data>
+  <data name="Block_0bf615629eab4f478c8342a22764b38f_Property_0759bee1173f4c6e89b1ee018288180f" xml:space="preserve">
+    <value>Сформировать результаты в уведомлении</value>
+  </data>
+  <data name="Block_0bf615629eab4f478c8342a22764b38f_Property_fe5a27f752204431a10ea035e510ce39" xml:space="preserve">
+    <value>Сформировать результаты в отчете</value>
+  </data>
+  <data name="Action_CurrentResultsReport" xml:space="preserve">
+    <value>Текущие результаты</value>
+  </data>
+  <data name="Action_CurrentResultsReportHint" xml:space="preserve">
+    <value>Получить отчет о текущих результатах голосования</value>
+  </data>
+  <data name="Action_CurrentResultsReportDescription" xml:space="preserve">
+    <value>Получение отчета о текущих результатах голосования</value>
+  </data>
 </root>

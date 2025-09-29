@@ -9,6 +9,9 @@
   "ExportFormats": [
     "Pdf"
   ],
+  "HandledEvents": [
+    "BeforeExecuteServer"
+  ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotingResultsReport",
   "NonVisualAuthorizationMode": "FullAccess",
@@ -17,7 +20,8 @@
     "PublicStructures",
     "DataSources",
     "Parameters",
-    "HandledEvents"
+    "HandledEvents",
+    "DisplayName"
   ],
   "Parameters": [
     {
@@ -32,10 +36,24 @@
       "Name": "TaskId",
       "InternalDataTypeName": "System.Int64",
       "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "6adad5a2-c782-4890-9752-fac05fec2ab5",
+      "Name": "Description",
+      "InternalDataTypeName": "System.String"
     }
   ],
   "PublicStructures": [],
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "TitleVoter",
+    "TitleVote",
+    "TitleComment",
+    "TitleResults",
+    "TitleFrom",
+    "TitleTitle",
+    "DescriptionSubject",
+    "DescriptionOnDocument"
+  ],
   "Versions": [
     {
       "Type": "ReportMetadata",

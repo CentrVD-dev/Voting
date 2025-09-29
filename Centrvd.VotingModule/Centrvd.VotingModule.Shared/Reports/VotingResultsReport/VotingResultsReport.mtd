@@ -1,0 +1,45 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "5b08244c-a41f-4a47-8ed3-cb363c2b6dfe",
+  "Name": "VotingResultsReport",
+  "AssociatedGuid": "3e766f58-5c7d-4876-8535-2d16d4de98cf",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Pdf",
+  "ExportFormats": [
+    "Pdf"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "VotingModuleVotingResultsReport",
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "NonVisualAuthorizationMode",
+    "PublicStructures",
+    "DataSources",
+    "Parameters",
+    "HandledEvents"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "1bfd6cab-d751-43e8-82e0-d2e9102edf72",
+      "Name": "Entity",
+      "EntityType": "3e766f58-5c7d-4876-8535-2d16d4de98cf",
+      "InternalDataTypeName": "Centrvd.VotingModule.IVotingTask, Sungero.Domain.Interfaces",
+      "IsRequired": true
+    },
+    {
+      "NameGuid": "9a5e5a5e-691e-4615-a314-42b5000057a2",
+      "Name": "TaskId",
+      "InternalDataTypeName": "System.Int64",
+      "IsSimpleDataType": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

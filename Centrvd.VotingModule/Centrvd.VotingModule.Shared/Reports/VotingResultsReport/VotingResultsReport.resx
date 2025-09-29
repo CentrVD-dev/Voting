@@ -58,49 +58,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DisplayName" xml:space="preserve">
-    <value>Voting Task</value>
-  </data>
-  <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Voting Task</value>
-  </data>
-  <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Voting Tasks</value>
-  </data>
-  <data name="AttachmentGroup_VotingGroupTitle" xml:space="preserve">
-    <value>Voting Documents</value>
-  </data>
-  <data name="AttachmentGroup_VotingGroupInformationMessage" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Block_eeb11a466c214de5bdc28ad415aee97f" xml:space="preserve">
-    <value>Voting Prepare</value>
-  </data>
-  <data name="Block_96609994f46d47a9bd97fe4909ecd123" xml:space="preserve">
-    <value>Voting</value>
-  </data>
-  <data name="Block_0bf615629eab4f478c8342a22764b38f" xml:space="preserve">
-    <value>End of voting notification</value>
-  </data>
-  <data name="Property_VotingResults" xml:space="preserve">
-    <value>Voting results</value>
-  </data>
-  <data name="Property_Voters" xml:space="preserve">
-    <value>Voters</value>
-  </data>
-  <data name="Action_Report" xml:space="preserve">
-    <value>Report</value>
-  </data>
-  <data name="Action_ReportDescription" xml:space="preserve">
-    <value>Report</value>
-  </data>
-  <data name="Action_ReportHint" xml:space="preserve">
-    <value>Report</value>
-  </data>
-  <data name="Action_ReportConfirmationMessage" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Action_ReportConfirmationDescription" xml:space="preserve">
-    <value />
-  </data>
 </root>

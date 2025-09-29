@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReferencedAssemblies="System.dll&#13;&#10;System.Drawing.dll&#13;&#10;System.Data.dll&#13;&#10;System.Xml.dll&#13;&#10;FastReport.Compat.dll&#13;&#10;System.Windows.Forms.dll&#13;&#10;FastReport.DataVisualization.dll&#13;&#10;Sungero.Domain.Shared&#13;&#10;Sungero.CoreEntities.Shared&#13;&#10;Sungero.Reporting.Shared&#13;&#10;CommonLibrary&#13;&#10;Sungero.Localization&#13;&#10;Sungero.Declension&#13;&#10;Sungero.Workflow.Server&#13;&#10;Sungero.Domain&#13;&#10;Sungero.Workflow.Shared&#13;&#10;Sungero.Workflow.Interfaces&#13;&#10;Sungero.Domain.Interfaces&#13;&#10;Centrvd.VotingModule.Shared&#13;&#10;Centrvd.VotingModule.Server" ReportInfo.CreatorVersion="2024.2.19.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+using Centrvd.VotingModule;
+using Sungero.Domain.Shared;
+using Sungero.CoreEntities;
+using Sungero.Core;
+using Resources = Centrvd.VotingModule.Reports.Resources;
+
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+  }
+}
+  </ScriptText>
+  <Dictionary>
+    <SungeroSqlDataConnection Name="Sungero_Connection" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties" ConnectionStringExpression="[SungeroConnectionString]">
+      <TableDataSource Name="Table" Alias="SelectTable" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectVotingResults}">
+        <Column Name="decision" DataType="System.String" PropName="Column"/>
+        <Column Name="voter" DataType="System.String" PropName="Column"/>
+        <Column Name="comment" DataType="System.String" PropName="Column"/>
+        <Column Name="decisionid" DataType="System.Int64" PropName="Column"/>
+        <Column Name="vote" DataType="System.String" PropName="Column"/>
+        <Column Name="summary" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="taskid" DataType="12" IsDbType="true" Expression="[Entity].Id"/>
+      </TableDataSource>
+    </SungeroSqlDataConnection>
+    <SungeroParameter Name="SungeroConnectionString" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties, DontShow" AsString="" Id="9ff31d46-7f37-4593-be16-35e4c78ed400" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Entity" Restrictions="DontModify, DontEdit, DontDelete" AsString="" Id="1bfd6cab-d751-43e8-82e0-d2e9102edf72" IsRequired="true" IsCollection="false" InternalDataType="Centrvd.VotingModule.IVotingTask, Sungero.Domain.Interfaces" IsSimpleDataType="false" EntityTypeId="3e766f58-5c7d-4876-8535-2d16d4de98cf"/>
+    <SungeroParameter Name="TaskId" AsString="" Id="9a5e5a5e-691e-4615-a314-42b5000057a2" IsRequired="false" IsCollection="false" InternalDataType="System.Int64" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="103.95">
+      <TextObject Name="Text5" Left="189" Top="28.35" Width="330.75" Height="56.7" Text="Отчет по голосованию" HorzAlign="Center" Font="Arial, 16pt"/>
+    </ReportTitleBand>
+    <GroupHeaderBand Name="GroupHeader1" Top="107.95" Width="718.2" Height="37.8" Condition="[SelectTable.decisionid]">
+      <TextObject Name="Text12" Width="718.2" Height="37.8" Border.Lines="All" Text="[SelectTable.decision]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <DataBand Name="Data2" Top="149.75" Width="718.2" Height="37.8" DataSource="Table">
+        <TextObject Name="Text8" Width="236.25" Height="37.8" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="[SelectTable.voter]" Font="Arial, 10pt"/>
+        <TextObject Name="Text9" Left="236.25" Width="179.55" Height="37.8" Border.Lines="All" Text="[SelectTable.vote]" HorzAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text10" Left="415.8" Width="302.4" Height="37.8" Border.Lines="All" GrowToBottom="true" Text="[SelectTable.comment]" Font="Arial, 10pt"/>
+      </DataBand>
+      <GroupFooterBand Name="GroupFooter1" Top="191.55" Width="718.2" Height="37.8"/>
+    </GroupHeaderBand>
+    <PageFooterBand Name="PageFooter1" Top="233.35" Width="718.2" Height="85.05">
+      <TextObject Name="Text1" Left="623.7" Width="94.5" Height="18.9" Text="[Page#]" Font="Arial, 10pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

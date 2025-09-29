@@ -3,6 +3,16 @@
   "NameGuid": "3e766f58-5c7d-4876-8535-2d16d4de98cf",
   "Name": "VotingTask",
   "AccessRightsMode": "Both",
+  "Actions": [
+    {
+      "NameGuid": "5a073e92-16c4-49d9-be07-26ae51db392a",
+      "Name": "Report",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
+    }
+  ],
   "AttachmentGroups": [
     {
       "NameGuid": "66c0cbb5-29a5-494e-bbef-16a99473fe7e",
@@ -191,7 +201,16 @@
     "NameGuid": "0ddadc15-1c4e-49a9-9946-88c4ee96a6f1",
     "Name": "RibbonCard",
     "Categories": [],
-    "Elements": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "bc2d01e4-6d7e-474e-84b5-9d786bad21d4",
+        "Name": "ActionButton",
+        "ActionGuid": "5a073e92-16c4-49d9-be07-26ae51db392a",
+        "Index": 51,
+        "ParentGuid": "f3b0ddcd-9d1e-4ca3-8780-695ae25a9e8b"
+      }
+    ],
     "Groups": [],
     "IsAncestorMetadata": true,
     "Pages": [],

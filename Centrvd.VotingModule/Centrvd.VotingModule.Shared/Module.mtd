@@ -66,6 +66,10 @@
     {
       "ItemId": "a33dca69-3f65-4a1a-a338-ee63a9539db5",
       "PreviousItemId": "c18082c3-bbf3-413d-a6aa-de3b7f9e53da"
+    },
+    {
+      "ItemId": "5b08244c-a41f-4a47-8ed3-cb363c2b6dfe",
+      "PreviousItemId": "a33dca69-3f65-4a1a-a338-ee63a9539db5"
     }
   ],
   "HandledEvents": [

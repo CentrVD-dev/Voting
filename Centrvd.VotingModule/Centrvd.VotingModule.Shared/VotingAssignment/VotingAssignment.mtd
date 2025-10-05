@@ -5,6 +5,33 @@
   "AccessRightsMode": "Instance",
   "Actions": [
     {
+      "NameGuid": "5ee99b98-940f-4ea4-8b65-79d3df146ee5",
+      "Name": "AddChildEntity",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    },
+    {
+      "NameGuid": "f27bf08f-e406-4a03-9eb5-fa8d0dfaac4d",
+      "Name": "CopyChildEntity",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    },
+    {
+      "NameGuid": "3f334f1e-d7a4-4ca5-bd1a-f26b35ccfae8",
+      "Name": "DeleteChildEntity",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    },
+    {
       "$type": "Sungero.Workflow.Shared.ExecutionResultActionMetadata, Sungero.Workflow.Shared",
       "NameGuid": "d0197da6-3d02-4f79-b769-d6714221110e",
       "Name": "Complete",
@@ -187,7 +214,7 @@
     }
   ],
   "HandledEvents": [
-    "RefreshClient"
+    "ShowingClient"
   ],
   "HideFromCreationArea": true,
   "HideFromNavigationEditorCreationArea": true,

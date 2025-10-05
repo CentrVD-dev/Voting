@@ -7,8 +7,4 @@ using Centrvd.VotingModule.VotingTask;
 
 namespace Centrvd.VotingModule
 {
-  partial class VotingTaskSharedHandlers
-  {
-
-  }
 }

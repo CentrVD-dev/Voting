@@ -157,6 +157,9 @@
       ]
     }
   ],
+  "HandledEvents": [
+    "ShowingClient"
+  ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotingNotification",
   "IsVisibleThreadText": true,

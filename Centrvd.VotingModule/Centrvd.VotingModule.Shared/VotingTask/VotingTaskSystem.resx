@@ -88,19 +88,52 @@
   <data name="Property_Voters" xml:space="preserve">
     <value>Voters</value>
   </data>
-  <data name="Action_Report" xml:space="preserve">
-    <value>Report</value>
+  <data name="Action_CurrentResultsReport" xml:space="preserve">
+    <value>Current results</value>
   </data>
-  <data name="Action_ReportDescription" xml:space="preserve">
-    <value>Report</value>
+  <data name="Action_CurrentResultsReportDescription" xml:space="preserve">
+    <value>Get current voting results report</value>
   </data>
-  <data name="Action_ReportHint" xml:space="preserve">
-    <value>Report</value>
+  <data name="Action_CurrentResultsReportHint" xml:space="preserve">
+    <value>Get current voting results report</value>
   </data>
-  <data name="Action_ReportConfirmationMessage" xml:space="preserve">
+  <data name="Action_CurrentResultsReportConfirmationMessage" xml:space="preserve">
     <value />
   </data>
-  <data name="Action_ReportConfirmationDescription" xml:space="preserve">
+  <data name="Action_CurrentResultsReportConfirmationDescription" xml:space="preserve">
     <value />
+  </data>
+  <data name="Block_0bf615629eab4f478c8342a22764b38f_Property_0759bee1173f4c6e89b1ee018288180f" xml:space="preserve">
+    <value>Form results in notice</value>
+  </data>
+  <data name="Block_0bf615629eab4f478c8342a22764b38f_Property_fe5a27f752204431a10ea035e510ce39" xml:space="preserve">
+    <value>Form results in report</value>
+  </data>
+  <data name="AttachmentGroup_VotingResultsGroupTitle" xml:space="preserve">
+    <value>Voting results</value>
+  </data>
+  <data name="AttachmentGroup_VotingResultsGroupInformationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Responsible" xml:space="preserve">
+    <value>Responsible</value>
+  </data>
+  <data name="Resource_035869ed2baa4573bdfe9e4f5e10c4b3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_035869ed2baa4573bdfe9e4f5e10c4b3_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_74e85eafe5944dc5b4724e791948b781" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_74e85eafe5944dc5b4724e791948b781_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_679cef60166e482cbfa7a1ec861f0263" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_679cef60166e482cbfa7a1ec861f0263_EmptyText" xml:space="preserve">
+    <value>Specify observers…</value>
   </data>
 </root>

@@ -3,6 +3,40 @@
   "NameGuid": "bd769f90-7dd7-4c38-8f46-cc8211ec82b5",
   "Name": "VotingModule",
   "AsyncHandlers": [],
+  "Blocks": [
+    {
+      "$type": "Sungero.Metadata.TaskBlockMetadata, Sungero.Workflow.Shared",
+      "NameGuid": "f799224d-5c6c-4dc3-8041-6bbba48ac71e",
+      "Name": "TaskBlock",
+      "BaseGuid": "af11beb2-61e1-453f-9c69-93b9f06355ec",
+      "EntityType": "3e766f58-5c7d-4876-8535-2d16d4de98cf",
+      "HandledEvents": [
+        "TaskBlockStartTask"
+      ],
+      "ProcessStagesDisplayMode": "Show",
+      "Properties": [
+        {
+          "$type": "Sungero.Metadata.NavigationBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "23c15df2-dfb5-48e1-8397-7214ce178af8",
+          "Name": "Observers",
+          "EntityGuid": "c612fc41-44a3-428b-a97c-433c333d78e9",
+          "IsAncestorMetadata": true,
+          "IsCollection": true,
+          "Overridden": [
+            "PreviousPropertyGuid"
+          ],
+          "PreviousPropertyGuid": "817eee5f-bd8b-488b-b440-4bb679b024c0"
+        },
+        {
+          "$type": "Sungero.Metadata.NavigationBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "817eee5f-bd8b-488b-b440-4bb679b024c0",
+          "Name": "Responsible",
+          "EntityGuid": "c612fc41-44a3-428b-a97c-433c333d78e9",
+          "PreviousPropertyGuid": "6a7fbf02-1642-4bdf-b6c1-f23d9c8d29f1"
+        }
+      ]
+    }
+  ],
   "ClientAssemblyName": "Centrvd.VotingModule.Client",
   "ClientBaseAssemblyName": "Centrvd.VotingModule.ClientBase",
   "ClientBaseNamespace": "Centrvd.VotingModule.ClientBase",

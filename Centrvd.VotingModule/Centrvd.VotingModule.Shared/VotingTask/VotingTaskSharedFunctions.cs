@@ -10,5 +10,18 @@ namespace Centrvd.VotingModule.Shared
   partial class VotingTaskFunctions
   {
 
+    /// <summary>
+    /// Вычислить ответственного за подготовку голосования.
+    /// </summary>
+    public Sungero.Company.IEmployee GetCalculatedResponsible(Sungero.CoreEntities.IRecipient recipient)
+    {
+      var employee = Sungero.Company.Employees.Null;
+      
+      if (recipient != null)
+        employee = Sungero.Company.PublicFunctions.Module.GetEmployeesFromRecipients(new List<Sungero.CoreEntities.IRecipient>() {recipient})
+          .Where(a => a != null).FirstOrDefault();
+      
+     return employee;
+    }
   }
 }

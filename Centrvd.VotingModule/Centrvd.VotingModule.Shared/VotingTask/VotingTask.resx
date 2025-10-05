@@ -70,4 +70,7 @@
   <data name="PointResult" xml:space="preserve">
     <value>{0} - {1}. </value>
   </data>
+  <data name="CannotCalculateResponsible" xml:space="preserve">
+    <value>Can not calculate the responsible for preparing the vote from the role {0}. Specify a different role or employee.</value>
+  </data>
 </root>

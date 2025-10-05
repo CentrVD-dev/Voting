@@ -14,6 +14,9 @@ namespace Centrvd.VotingModule
     {
       _obj.Voters.Clear();
       _obj.VotingResults.Clear();
+      
+      var employee = Centrvd.VotingModule.Functions.VotingTask.GetCalculatedResponsible(_obj, _obj.Responsible);
+      _obj.Responsible = employee;
     }
   }
 

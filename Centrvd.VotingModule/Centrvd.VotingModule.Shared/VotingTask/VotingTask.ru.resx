@@ -70,4 +70,7 @@
   <data name="PointResult" xml:space="preserve">
     <value>{0} - {1}. </value>
   </data>
+  <data name="CannotCalculateResponsible" xml:space="preserve">
+    <value>Не удалось вычислить ответственного за подготовку голосования из роли {0}. Укажите другую роль или сотрудника.</value>
+  </data>
 </root>

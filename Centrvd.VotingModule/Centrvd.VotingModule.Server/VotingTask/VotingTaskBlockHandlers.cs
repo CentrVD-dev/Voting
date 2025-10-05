@@ -52,7 +52,7 @@ namespace Centrvd.VotingModule.Server.VotingTaskBlocks
         simpleDocument.Name = Centrvd.VotingModule.Reports.Resources.VotingResultsReport.TitleTitle;
         report.ExportTo(simpleDocument);
         
-        notice.VotingResultsGroup.OfficialDocuments.Add(simpleDocument);
+        _obj.VotingResultsGroup.OfficialDocuments.Add(simpleDocument);
         
         simpleDocument.AccessRights.Grant(notice.Performer, DefaultAccessRightsTypes.Change);
       }

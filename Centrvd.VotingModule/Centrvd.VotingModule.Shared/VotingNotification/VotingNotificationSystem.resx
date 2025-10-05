@@ -97,10 +97,4 @@
   <data name="ControlGroup_45512dfab9a84b3f95fb1a1aebd0e74c" xml:space="preserve">
     <value>Voting results</value>
   </data>
-  <data name="AttachmentGroup_VotingResultsGroupTitle" xml:space="preserve">
-    <value>Voting results</value>
-  </data>
-  <data name="AttachmentGroup_VotingResultsGroupInformationMessage" xml:space="preserve">
-    <value />
-  </data>
 </root>

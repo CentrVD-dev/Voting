@@ -67,10 +67,10 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Voting Tasks</value>
   </data>
-  <data name="AttachmentGroup_VotingGroupTitle" xml:space="preserve">
-    <value>Voting Documents</value>
+  <data name="AttachmentGroup_DocumentGroupTitle" xml:space="preserve">
+    <value>Document</value>
   </data>
-  <data name="AttachmentGroup_VotingGroupInformationMessage" xml:space="preserve">
+  <data name="AttachmentGroup_DocumentGroupInformationMessage" xml:space="preserve">
     <value />
   </data>
   <data name="Block_eeb11a466c214de5bdc28ad415aee97f" xml:space="preserve">
@@ -109,10 +109,10 @@
   <data name="Block_0bf615629eab4f478c8342a22764b38f_Property_fe5a27f752204431a10ea035e510ce39" xml:space="preserve">
     <value>Form results in report</value>
   </data>
-  <data name="AttachmentGroup_VotingResultsGroupTitle" xml:space="preserve">
-    <value>Voting results</value>
+  <data name="AttachmentGroup_ReportGroupTitle" xml:space="preserve">
+    <value>Report</value>
   </data>
-  <data name="AttachmentGroup_VotingResultsGroupInformationMessage" xml:space="preserve">
+  <data name="AttachmentGroup_ReportGroupInformationMessage" xml:space="preserve">
     <value />
   </data>
   <data name="Property_Responsible" xml:space="preserve">

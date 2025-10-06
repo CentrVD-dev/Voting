@@ -73,9 +73,6 @@
   <data name="Property_Variants" xml:space="preserve">
     <value>Варианты</value>
   </data>
-  <data name="Property_DocumentKinds" xml:space="preserve">
-    <value>Виды документов</value>
-  </data>
   <data name="Action_ShowUsingAssignments" xml:space="preserve">
     <value>Показать задания</value>
   </data>

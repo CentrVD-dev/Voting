@@ -67,8 +67,8 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Задачи голосования</value>
   </data>
-  <data name="AttachmentGroup_VotingGroupTitle" xml:space="preserve">
-    <value>Документы для голосования</value>
+  <data name="AttachmentGroup_DocumentGroupTitle" xml:space="preserve">
+    <value>Документ</value>
   </data>
   <data name="Block_eeb11a466c214de5bdc28ad415aee97f" xml:space="preserve">
     <value>Подготовка голосования</value>
@@ -100,8 +100,8 @@
   <data name="Action_CurrentResultsReportDescription" xml:space="preserve">
     <value>Получение отчета о текущих результатах голосования</value>
   </data>
-  <data name="AttachmentGroup_VotingResultsGroupTitle" xml:space="preserve">
-    <value>Результаты голосования</value>
+  <data name="AttachmentGroup_ReportGroupTitle" xml:space="preserve">
+    <value>Отчет</value>
   </data>
   <data name="Property_Responsible" xml:space="preserve">
     <value>Ответственный</value>

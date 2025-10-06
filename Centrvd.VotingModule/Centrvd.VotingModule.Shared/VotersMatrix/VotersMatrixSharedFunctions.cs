@@ -37,9 +37,17 @@ namespace Centrvd.VotingModule.Shared
         // После выбора: Если Role заполнен, а ComputedRole пуст - выбран Role. Если Role и ComputedRole заполнены - выбран ComputedRole.
         if (role.ComputedRole != null)
         {
-          var computedRecipients = role.ComputedRole.Compute(votingTask).ToList();
-          var computedEmployees = Sungero.Company.PublicFunctions.Module.GetEmployeesFromRecipients(computedRecipients).Where(a => a != null);
-          result.AddRange(computedEmployees);
+          try
+          {
+            var computedRecipients = role.ComputedRole.Compute(votingTask).ToList();
+            var computedEmployees = Sungero.Company.PublicFunctions.Module.GetEmployeesFromRecipients(computedRecipients).Where(a => a != null);
+            result.AddRange(computedEmployees);
+          }
+          catch
+          {
+            Logger.ErrorFormat("Не удалось вычислить роль \"{0}\" id - {1} в контексте задачи голосования id - {2}", role.ComputedRole.Name, role.ComputedRole.Id, votingTask.Id);
+          }
+
         }
         else if (role.Role != null)
         {

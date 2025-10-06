@@ -73,9 +73,6 @@
   <data name="Property_Variants" xml:space="preserve">
     <value>Variants</value>
   </data>
-  <data name="Property_DocumentKinds" xml:space="preserve">
-    <value>Document kinds</value>
-  </data>
   <data name="Action_ShowUsingAssignments" xml:space="preserve">
     <value>Show assignments</value>
   </data>

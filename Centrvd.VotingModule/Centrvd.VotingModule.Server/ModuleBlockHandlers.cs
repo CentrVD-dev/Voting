@@ -10,6 +10,10 @@ namespace Centrvd.VotingModule.Server.VotingModuleBlocks
   partial class TaskBlockHandlers
   {
 
+    public virtual void TaskBlockEnd(System.Collections.Generic.IEnumerable<Centrvd.VotingModule.IVotingTask> createdTasks)
+    {
+      _block.OutProperties.Report = createdTasks.FirstOrDefault()?.DocumentGroup.OfficialDocuments?.FirstOrDefault();
+    }
     public virtual void TaskBlockStartTask(Centrvd.VotingModule.IVotingTask task)
     {
       task.Responsible = Centrvd.VotingModule.Functions.VotingTask.GetCalculatedResponsible(task, _block.Responsible);

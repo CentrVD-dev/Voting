@@ -20,7 +20,8 @@
   "AttachmentGroups": [
     {
       "NameGuid": "66c0cbb5-29a5-494e-bbef-16a99473fe7e",
-      "Name": "VotingGroup",
+      "Name": "DocumentGroup",
+      "CanDeleteTaskFamilyAttachments": true,
       "Constraints": [],
       "IsAncestorMetadata": true,
       "IsAssociatedEntityGroup": true,

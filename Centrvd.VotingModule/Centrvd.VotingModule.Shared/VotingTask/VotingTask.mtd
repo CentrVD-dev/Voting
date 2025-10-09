@@ -16,18 +16,20 @@
   "AttachmentGroups": [
     {
       "NameGuid": "66c0cbb5-29a5-494e-bbef-16a99473fe7e",
-      "Name": "VotingGroup",
+      "Name": "DocumentGroup",
+      "CanDeleteTaskFamilyAttachments": true,
       "Constraints": [
         {
           "NameGuid": "ad8078fe-720a-4141-b168-f6f3a84dd019",
           "Name": "OfficialDocuments",
-          "ConstraintTypeId": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1"
+          "ConstraintTypeId": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1",
+          "Limit": 1
         }
       ]
     },
     {
       "NameGuid": "bee218ad-1967-437b-94d6-c8a2e9d78bb2",
-      "Name": "VotingResultsGroup",
+      "Name": "ReportGroup",
       "Constraints": [
         {
           "NameGuid": "7ca3eb11-69ef-44d3-81c5-0f6ddfa91d1a",
@@ -73,7 +75,8 @@
       "BaseGuid": "104c3e36-09a6-4075-ac24-9ad050d5720c",
       "EntityType": "da769124-9cfa-43e6-aea3-62ac4dad55d3",
       "HandledEvents": [
-        "VotingNotificationBlockStartNotice"
+        "VotingNotificationBlockStartNotice",
+        "VotingNotificationBlockStart"
       ],
       "ProcessStagesDisplayMode": "Show",
       "Properties": [

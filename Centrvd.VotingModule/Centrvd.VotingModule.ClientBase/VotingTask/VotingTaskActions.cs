@@ -18,7 +18,7 @@ namespace Centrvd.VotingModule.Client
 
     public virtual bool CanCurrentResultsReport(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return Equals(Users.Current, _obj.Author) && !_obj.State.IsInserted;
+      return (Equals(Users.Current, _obj.Author) || Equals(Users.Current, _obj.Responsible)) && !_obj.State.IsInserted;
     }
 
   }

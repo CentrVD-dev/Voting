@@ -70,4 +70,7 @@
   <data name="Block_f799224d5c6c4dc380416bbba48ac71e_Property_817eee5fbd8b488bb4404bb679b024c0" xml:space="preserve">
     <value>Ответственный</value>
   </data>
+  <data name="Block_f799224d5c6c4dc380416bbba48ac71e_Property_d74b0ddbcf434c309930c25a1ba56f36" xml:space="preserve">
+    <value>Отчет</value>
+  </data>
 </root>

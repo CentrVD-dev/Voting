@@ -11,37 +11,8 @@ namespace Centrvd.VotingModule.Server.VotingTaskBlocks
   partial class VotingNotificationBlockHandlers
   {
 
-    public virtual void VotingNotificationBlockStartNotice(Centrvd.VotingModule.IVotingNotification notice)
+    public virtual void VotingNotificationBlockStart()
     {
-      // Сформировать результаты в тексте уведомления
-      if (_block.FormResultInNotice.GetValueOrDefault())
-      {
-        var groupedPoints = _obj.VotingResults.GroupBy(v => v.PointId);
-        foreach (var points in groupedPoints)
-        {
-          notice.VotingResults += points.First().Text + Environment.NewLine;
-          
-          // Сначала выводим всех участников
-          foreach (var point in points)
-          {
-            var performerName = point.Substituted != null ? Centrvd.VotingModule.VotingTasks.Resources.ForFormat(point.Voter.Person.ShortName, point.Substituted.Person.ShortName) : point.Voter.Person.ShortName;
-            var comment = !string.IsNullOrEmpty(point.Comment) ? Centrvd.VotingModule.VotingTasks.Resources.CommentFormat(point.Comment) : string.Empty;
-            
-            notice.VotingResults += Centrvd.VotingModule.VotingTasks.Resources.VoterResultLineFormat(performerName, point.Vote.Name, comment) + Environment.NewLine;
-          }
-          
-          // Затем выводим итоги
-          var voteKinds = points.Select(v => v.Vote).Distinct().Cast<IVoteKind>().ToList();
-          var votesCount = Centrvd.VotingModule.Reports.Resources.VotingResultsReport.TitleResults.ToString();
-          foreach (var voteKind in voteKinds)
-            votesCount += Centrvd.VotingModule.VotingTasks.Resources.PointResultFormat(voteKind.Name, points.Count(v => Equals(v.Vote, voteKind)));
-          
-          notice.VotingResults += votesCount + Environment.NewLine;
-          
-          notice.VotingResults += Environment.NewLine;
-        } 
-      }
-      
       // Сформировать результаты отчетом и приложить к уведомлению
       if (_block.FormResultsInReport.GetValueOrDefault())
       {
@@ -50,11 +21,40 @@ namespace Centrvd.VotingModule.Server.VotingTaskBlocks
         
         var simpleDocument = Sungero.Docflow.SimpleDocuments.Create();
         simpleDocument.Name = Centrvd.VotingModule.Reports.Resources.VotingResultsReport.TitleTitle;
+        simpleDocument.Save();
         report.ExportTo(simpleDocument);
         
-        _obj.VotingResultsGroup.OfficialDocuments.Add(simpleDocument);
-        
-        simpleDocument.AccessRights.Grant(notice.Performer, DefaultAccessRightsTypes.Change);
+        _obj.ReportGroup.OfficialDocuments.Add(simpleDocument);
+      }
+    }
+
+    public virtual void VotingNotificationBlockStartNotice(Centrvd.VotingModule.IVotingNotification notice)
+    {
+      // Сформировать результаты в тексте уведомления.
+      if (_block.FormResultInNotice.GetValueOrDefault())
+      {
+        var groupedPoints = _obj.VotingResults.GroupBy(v => v.PointId);
+        foreach (var points in groupedPoints)
+        {
+          notice.VotingResults += points.First().Text + Environment.NewLine;
+          
+          // Сначала выводим всех участников.
+          foreach (var point in points)
+          {
+            var performerName = point.Substituted != null ? Centrvd.VotingModule.VotingTasks.Resources.ForFormat(point.Voter.Person.ShortName, point.Substituted.Person.ShortName) : point.Voter.Person.ShortName;
+            var comment = !string.IsNullOrEmpty(point.Comment) ? Centrvd.VotingModule.VotingTasks.Resources.CommentFormat(point.Comment) : string.Empty;
+            
+            notice.VotingResults += Centrvd.VotingModule.VotingTasks.Resources.VoterResultLineFormat(performerName, point.Vote.Name, comment) + Environment.NewLine;
+          }
+          
+          // Затем выводим итоги.
+          var voteKinds = points.Select(v => v.Vote).Distinct().Cast<IVoteKind>().ToList();
+          var votesCount = Centrvd.VotingModule.Reports.Resources.VotingResultsReport.TitleResults.ToString();
+          foreach (var voteKind in voteKinds)
+            votesCount += Centrvd.VotingModule.VotingTasks.Resources.PointResultFormat(voteKind.Name, points.Count(v => Equals(v.Vote, voteKind)));
+          
+          notice.VotingResults += votesCount + Environment.NewLine + Environment.NewLine;
+        }
       }
     }
   }

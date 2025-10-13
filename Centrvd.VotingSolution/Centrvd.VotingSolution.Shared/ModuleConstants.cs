@@ -1,7 +1,7 @@
 using System;
 using Sungero.Core;
 
-namespace Centrvd.Voting.Constants
+namespace Centrvd.VotingSolution.Constants
 {
   public static class Module
   {

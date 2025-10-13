@@ -4,7 +4,7 @@ using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
 
-namespace Centrvd.Voting.Shared
+namespace Centrvd.VotingSolution.Server
 {
   public class ModuleFunctions
   {

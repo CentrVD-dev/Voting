@@ -4,9 +4,7 @@ using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
 
-namespace Centrvd.Voting.Server
+namespace Centrvd.VotingSolution.Client
 {
-  partial class VotingHandlers
-  {
-  }
+
 }

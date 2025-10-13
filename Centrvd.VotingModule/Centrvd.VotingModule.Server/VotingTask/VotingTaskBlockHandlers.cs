@@ -24,6 +24,9 @@ namespace Centrvd.VotingModule.Server.VotingTaskBlocks
         simpleDocument.Save();
         report.ExportTo(simpleDocument);
         
+        if (_obj.ReportGroup.OfficialDocuments.Any())
+          _obj.ReportGroup.OfficialDocuments.Clear();
+        
         _obj.ReportGroup.OfficialDocuments.Add(simpleDocument);
       }
     }

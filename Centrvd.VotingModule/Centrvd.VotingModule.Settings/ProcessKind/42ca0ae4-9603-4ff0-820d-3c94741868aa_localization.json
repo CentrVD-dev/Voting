@@ -1,0 +1,18 @@
+{
+  "Description": {},
+  "Name": {
+    "ru-RU": "Голосование"
+  },
+  "Subject_SE_1": {
+    "en-US": "Prepare voting",
+    "ru-RU": "Подготовьте голосование"
+  },
+  "Subject_SE_2": {
+    "en-US": "Vote",
+    "ru-RU": "Проголосуйте"
+  },
+  "Subject_SE_3": {
+    "en-US": "Voting is over",
+    "ru-RU": "Голосование окончено"
+  }
+}

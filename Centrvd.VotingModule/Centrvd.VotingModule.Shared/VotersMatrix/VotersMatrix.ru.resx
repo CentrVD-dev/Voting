@@ -58,4 +58,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MatrixUsedInAssignments" xml:space="preserve">
+    <value>Матрица используется в заданиях. Некоторые поля заблокированы от изменения.</value>
+  </data>
+  <data name="EmptyEmployeeAndRole" xml:space="preserve">
+    <value>Матрица должна содержать хотя бы одного сотрудника или роль.</value>
+  </data>
 </root>

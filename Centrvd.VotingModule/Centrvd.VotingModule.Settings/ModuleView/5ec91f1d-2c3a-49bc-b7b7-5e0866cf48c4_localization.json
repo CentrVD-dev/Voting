@@ -1,0 +1,46 @@
+{
+  "_Title_75e1bd7d42df420f83d60f9907f15f26": {
+    "ru-RU": "Голосование"
+  },
+  "Action_Description_22ab759378254cdc8c0d5ce72c8f0923": {
+    "en-US": "Groups of voters",
+    "ru-RU": "Группы участников голосований"
+  },
+  "Action_Description_633e0a0dee3f4ac1a50591eb51452918": {
+    "en-US": "Databook of all votes kinds",
+    "ru-RU": "Справочник всех видов голосов"
+  },
+  "Action_Description_81e33c87a5904b5fbda62bacc24d17b8": {
+    "en-US": "Sets of voting options",
+    "ru-RU": "Наборы вариантов голосования"
+  },
+  "Action_Title_22ab759378254cdc8c0d5ce72c8f0923": {
+    "en-US": "Voters matrices",
+    "ru-RU": "Матрицы голосующих"
+  },
+  "Action_Title_633e0a0dee3f4ac1a50591eb51452918": {
+    "en-US": "Votes kinds",
+    "ru-RU": "Виды голосов"
+  },
+  "Action_Title_81e33c87a5904b5fbda62bacc24d17b8": {
+    "en-US": "Votes matrices",
+    "ru-RU": "Матрицы голосов"
+  },
+  "Description": {
+    "ru-RU": "Обложка для работы с процессами голосования, матрицами голосующих и видами голосов"
+  },
+  "Group_Title_84cba98148b840868eeee51b5db75b31": {
+    "en-US": "Matrices",
+    "ru-RU": "Матрицы"
+  },
+  "Group_Title_cfb0253ce7754abd9bc55ae75d246a36": {
+    "en-US": "Votes",
+    "ru-RU": "Голоса"
+  },
+  "Name": {
+    "ru-RU": "Голосование"
+  },
+  "Tab_Title_1742f80128c8453aae5aa10a3cc18bf7": {
+    "en-US": "Tab"
+  }
+}

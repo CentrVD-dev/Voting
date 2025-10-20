@@ -14,8 +14,8 @@ namespace Centrvd.VotingModule.Server
     /// Указано ли в настройках блока формирование результатов в карточке уведомления.
     /// </summary>
     /// <returns>True, если указано. Иначе - false.</returns>
-    [Remote]
-    public bool isResultinNotice()
+    [Public]
+    public bool IsResultinNotice()
     {
       return Centrvd.VotingModule.VotingTask.Blocks.VotingNotificationBlocks.Get(_obj.Task.Scheme, _obj.BlockUid)?.FormResultInNotice == true;
     }

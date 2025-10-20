@@ -18,8 +18,8 @@
       "Name": "ShowUsingMatrices",
       "ActionArea": "Card",
       "GenerateHandler": true,
-      "LargeIconName": null,
-      "SmallIconName": null
+      "LargeIconName": "Action_ShowUsingMatrices_large_6159230d1349436c9ccec8190bdabb41.png",
+      "SmallIconName": "Action_ShowUsingMatrices_small_6159230d1349436c9ccec8190bdabb41.png"
     }
   ],
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
@@ -119,13 +119,34 @@
     }
   ],
   "PublicStructures": [],
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "VoteKindUsedInMatrices"
+  ],
   "RibbonCardMetadata": {
     "NameGuid": "4888e7a4-61aa-40e9-8797-3b5f277f788d",
     "Name": "RibbonCard",
     "Categories": [],
-    "Elements": [],
-    "Groups": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "613da623-46eb-40aa-845c-105b79986de2",
+        "Name": "ShowUsingMatrices",
+        "ActionGuid": "6159230d-1349-436c-9cce-c8190bdabb41",
+        "ButtonSize": "Large",
+        "Index": 0,
+        "ParentGuid": "b58d8d67-df2e-450c-9bf2-845936093932"
+      }
+    ],
+    "Groups": [
+      {
+        "NameGuid": "b58d8d67-df2e-450c-9bf2-845936093932",
+        "Name": "MatrixCommands",
+        "IconName": null,
+        "Index": 21,
+        "ParentGuid": "21a31627-5f58-4416-8c4a-90f538ee2e57",
+        "SmallIconName": null
+      }
+    ],
     "IsAncestorMetadata": true,
     "Pages": [],
     "RibbonKind": "Card"

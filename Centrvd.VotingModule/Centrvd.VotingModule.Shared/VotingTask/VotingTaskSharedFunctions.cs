@@ -13,6 +13,8 @@ namespace Centrvd.VotingModule.Shared
     /// <summary>
     /// Вычислить ответственного за подготовку голосования.
     /// </summary>
+    /// <param name="recipient">Субъект прав (роль, группа).</param>
+    /// <returns>Сотрудник.</returns>
     public Sungero.Company.IEmployee GetCalculatedResponsible(Sungero.CoreEntities.IRecipient recipient)
     {
       var employee = Sungero.Company.Employees.Null;

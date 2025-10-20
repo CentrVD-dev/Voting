@@ -18,8 +18,8 @@
       "Name": "ShowUsingAssignments",
       "ActionArea": "Card",
       "GenerateHandler": true,
-      "LargeIconName": null,
-      "SmallIconName": null
+      "LargeIconName": "Action_ShowUsingAssignments_large_de6a685beb464b5195d0ab238b88c949.png",
+      "SmallIconName": "Action_ShowUsingAssignments_small_de6a685beb464b5195d0ab238b88c949.png"
     }
   ],
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
@@ -97,7 +97,8 @@
     }
   ],
   "HandledEvents": [
-    "ShowingClient"
+    "ShowingClient",
+    "BeforeSaveServer"
   ],
   "HideFromCreationArea": true,
   "HideFromNavigationEditorCreationArea": true,
@@ -146,13 +147,34 @@
     }
   ],
   "PublicStructures": [],
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "FewVoicesKinds"
+  ],
   "RibbonCardMetadata": {
     "NameGuid": "8526e7f4-6845-4c89-8b87-49f40dfa9248",
     "Name": "RibbonCard",
     "Categories": [],
-    "Elements": [],
-    "Groups": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "28224cde-5f07-4ffd-b59c-b8c0276c5a91",
+        "Name": "ShowUsingAssignments",
+        "ActionGuid": "de6a685b-eb46-4b51-95d0-ab238b88c949",
+        "ButtonSize": "Large",
+        "Index": 0,
+        "ParentGuid": "c2e51900-59ad-407e-8112-7bea0f59a19f"
+      }
+    ],
+    "Groups": [
+      {
+        "NameGuid": "c2e51900-59ad-407e-8112-7bea0f59a19f",
+        "Name": "AssignmentsCommands",
+        "IconName": null,
+        "Index": 21,
+        "ParentGuid": "21a31627-5f58-4416-8c4a-90f538ee2e57",
+        "SmallIconName": null
+      }
+    ],
     "IsAncestorMetadata": true,
     "Pages": [],
     "RibbonKind": "Card"

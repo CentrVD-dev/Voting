@@ -12,8 +12,7 @@ namespace Centrvd.VotingModule
 
     public override void Showing(Sungero.Presentation.FormShowingEventArgs e)
     {
-      var isResultsInNotice = Functions.VotingNotification.Remote.isResultinNotice(_obj);
-      _obj.State.Properties.VotingResults.IsVisible = isResultsInNotice;
+      Functions.VotingNotification.SetVisibleProperties(_obj);
     }
 
   }

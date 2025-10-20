@@ -58,4 +58,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MatrixUsedInAssignments" xml:space="preserve">
+    <value>The matrix is used in assignments. Some fields are blocked from being changed.</value>
+  </data>
+  <data name="EmptyEmployeeAndRole" xml:space="preserve">
+    <value>The matrix must contain at least one employee or role.</value>
+  </data>
 </root>

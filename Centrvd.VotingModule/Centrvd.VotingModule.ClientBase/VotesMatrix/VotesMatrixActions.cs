@@ -24,12 +24,15 @@ namespace Centrvd.VotingModule.Client
 
     public virtual void ShowUsingAssignments(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      Centrvd.VotingModule.Functions.VotesMatrix.Remote.GetAssignmentsMatrixUsed(_obj).Show();
+      Centrvd.VotingModule.Functions.VotesMatrix.Remote.GetAssignmentsMatrixUsed(_obj).ShowModal();
     }
 
     public virtual bool CanShowUsingAssignments(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return true;
+      bool hasUsingAssignments = false;
+      e.Params.TryGetValue(Centrvd.VotingModule.Constants.VotesMatrix.UsedInAssignments, out hasUsingAssignments);
+      
+      return hasUsingAssignments;
     }
 
   }

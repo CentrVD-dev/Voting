@@ -177,6 +177,20 @@
       "PreviousPropertyGuid": "cfdeb53d-17ff-4944-b0f6-9c60c26a7d3d"
     }
   ],
+  "PublicFunctions": [
+    {
+      "Name": "IsResultinNotice",
+      "Parameters": [
+        {
+          "Name": "votingNotification",
+          "ParameterType": "global::Centrvd.VotingModule.IVotingNotification",
+          "ParameterTypeFullName": "Centrvd.VotingModule.IVotingNotification, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    }
+  ],
   "PublicStructures": [],
   "ResourcesKeys": [],
   "RibbonCardMetadata": {

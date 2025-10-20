@@ -91,4 +91,7 @@
   <data name="Action_ShowUsingAssignmentsConfirmationDescription" xml:space="preserve">
     <value />
   </data>
+  <data name="Ribbon_AssignmentsCommands_4e6049f955f3499d8a0c34657f6deb3f" xml:space="preserve">
+    <value>Assignments</value>
+  </data>
 </root>

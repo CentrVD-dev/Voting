@@ -9,6 +9,14 @@ namespace Centrvd.VotingModule.Shared
 {
   partial class VotingNotificationFunctions
   {
-
+    /// <summary>
+    /// Установить видимость свойств.
+    /// </summary>
+    public void SetVisibleProperties()
+    {
+      var isResultsInNotice = Centrvd.VotingModule.PublicFunctions.VotingNotification.IsResultinNotice(_obj);
+      
+      _obj.State.Properties.VotingResults.IsVisible = isResultsInNotice;
+    }
   }
 }

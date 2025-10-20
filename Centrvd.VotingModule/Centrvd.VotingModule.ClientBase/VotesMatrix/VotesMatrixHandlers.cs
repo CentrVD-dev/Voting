@@ -11,13 +11,9 @@ namespace Centrvd.VotingModule
   {
     public override void Showing(Sungero.Presentation.FormShowingEventArgs e)
     {
-      var hasUsingAssignments =  Centrvd.VotingModule.Functions.VotesMatrix.Remote.IsMatrixUsedInAssignments(_obj);
-      e.Params.AddOrUpdate(Centrvd.VotingModule.Constants.VotesMatrix.UsedInAssignments, hasUsingAssignments);
+      Functions.VotesMatrix.ShowEditWarning(_obj, e);
 
       Centrvd.VotingModule.Functions.VotesMatrix.SetEnableProperties(_obj);
-      
-      if (hasUsingAssignments && _obj.AccessRights.CanUpdate())
-        e.AddInformation("Матрица используется в заданиях. Некоторые поля заблокированы от изменения.", _obj.Info.Actions.ShowUsingAssignments);
     }
   }
 

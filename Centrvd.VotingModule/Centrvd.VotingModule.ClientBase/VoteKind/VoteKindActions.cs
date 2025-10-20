@@ -24,12 +24,15 @@ namespace Centrvd.VotingModule.Client
 
     public virtual void ShowUsingMatrices(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      Centrvd.VotingModule.Functions.VoteKind.Remote.GetMatricesVoteKindUsed(_obj).Show();
+      Centrvd.VotingModule.Functions.VoteKind.Remote.GetMatricesVoteKindUsed(_obj).ShowModal();
     }
 
     public virtual bool CanShowUsingMatrices(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return true;
+      bool hasUsedInMatrices = false;
+      e.Params.TryGetValue(Centrvd.VotingModule.Constants.VoteKind.UsedInMatrices, out hasUsedInMatrices);
+      
+      return hasUsedInMatrices;
     }
 
   }

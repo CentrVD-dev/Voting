@@ -79,4 +79,7 @@
   <data name="Action_ShowUsingMatricesDescription" xml:space="preserve">
     <value>Показать использующие матрицы голосов</value>
   </data>
+  <data name="Ribbon_MatrixCommands_b58d8d67df2e450c9bf2845936093932" xml:space="preserve">
+    <value>Матрицы</value>
+  </data>
 </root>

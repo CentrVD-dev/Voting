@@ -17,14 +17,26 @@ namespace Centrvd.VotingModule
       
       var votingTask = Centrvd.VotingModule.VotingTasks.As(_obj.Task);
       
-      // Обновляем матрицы голосующих для всех пунктов
+      // Обновляем матрицы голосующих для всех пунктов.
       foreach (var votingPoint in _obj.VotingPoints)
         votingPoint.VotersMatrix = e.NewValue;
       
       if (e.NewValue != null)
-        _obj.VotersLabel = "Голосующие: " + string.Join(", ", Centrvd.VotingModule.Functions.VotersMatrix.CalculateEmployeesFromMatrix(e.NewValue, votingTask).Select(emp => emp.Person.ShortName));
+      {
+        _obj.VotersLabel = Centrvd.VotingModule.VotingPrepareAssignments.Resources.VotersLabel + string.Join(", ", Centrvd.VotingModule.Functions.VotersMatrix.CalculateEmployeesFromMatrix(e.NewValue, votingTask).Select(emp => emp.Person.ShortName));
+        
+        _obj.State.Properties.VotingPoints.Properties.VotersNames.IsVisible = false;
+        _obj.State.Properties.VotingPoints.Properties.VotersMatrix.IsVisible = false;
+        _obj.State.Properties.VotersLabel.IsVisible = true;
+      }
       else
+      {
         _obj.VotersLabel = null;
+        
+        _obj.State.Properties.VotingPoints.Properties.VotersNames.IsVisible = true;
+        _obj.State.Properties.VotingPoints.Properties.VotersMatrix.IsVisible = true;
+        _obj.State.Properties.VotersLabel.IsVisible = false;
+      }
     }
 
     public virtual void UnitedVotesMatrixChanged(Centrvd.VotingModule.Shared.VotingPrepareAssignmentUnitedVotesMatrixChangedEventArgs e)
@@ -37,9 +49,21 @@ namespace Centrvd.VotingModule
         votingPoint.VotesMatrix = e.NewValue;
       
       if (e.NewValue != null)
-        _obj.VotesLabel = "Варианты голосов: " + string.Join(", ", e.NewValue.Variants.Select(v => v.VoteKind.Name));
+      {
+        _obj.VotesLabel = Centrvd.VotingModule.VotingPrepareAssignments.Resources.VotesKindsLabel + string.Join(", ", e.NewValue.Variants.Select(v => v.VoteKind.Name));
+        
+        _obj.State.Properties.VotingPoints.Properties.VotesKinds.IsVisible = false;
+        _obj.State.Properties.VotingPoints.Properties.VotesMatrix.IsVisible = false;
+        _obj.State.Properties.VotesLabel.IsVisible = true;
+      }
       else
+      {
         _obj.VotesLabel = null;
+        
+        _obj.State.Properties.VotingPoints.Properties.VotesKinds.IsVisible = true;
+        _obj.State.Properties.VotingPoints.Properties.VotesMatrix.IsVisible = true;
+        _obj.State.Properties.VotesLabel.IsVisible = false;
+      }
     }
   }
 

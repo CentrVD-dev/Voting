@@ -247,8 +247,7 @@
     }
   ],
   "HandledEvents": [
-    "CreatedServer",
-    "RefreshClient"
+    "ShowingClient"
   ],
   "HideFromCreationArea": true,
   "HideFromNavigationEditorCreationArea": true,
@@ -334,7 +333,10 @@
     }
   ],
   "PublicStructures": [],
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "VotersLabel",
+    "VotesKindsLabel"
+  ],
   "RibbonCardMetadata": {
     "NameGuid": "17f789b1-cb17-4288-a2d2-370e8a71d6ad",
     "Name": "RibbonCard",

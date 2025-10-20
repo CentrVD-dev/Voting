@@ -85,4 +85,7 @@
   <data name="Action_ShowUsingAssignmentsDescription" xml:space="preserve">
     <value>Показать использующие матрицу задания</value>
   </data>
+  <data name="Ribbon_AssignmentsCommands_4e6049f955f3499d8a0c34657f6deb3f" xml:space="preserve">
+    <value>Задания</value>
+  </data>
 </root>

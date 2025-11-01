@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace Centrvd.VotingSolution.Client
 {
-  public class ModuleFunctions
+  public partial class ModuleFunctions
   {
 
   }

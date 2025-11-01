@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace Centrvd.VotingSolution.Server
 {
-  public class ModuleAsyncHandlers
+  public partial class ModuleAsyncHandlers
   {
 
   }

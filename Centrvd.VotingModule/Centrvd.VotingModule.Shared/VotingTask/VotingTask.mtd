@@ -49,7 +49,6 @@
       "$type": "Sungero.Metadata.AssignmentBlockMetadata, Sungero.Workflow.Shared",
       "NameGuid": "eeb11a46-6c21-4de5-bdc2-8ad415aee97f",
       "Name": "VotingPrepareAssignmentBlock",
-      "BaseGuid": "9cc122a7-f93b-4053-9219-cd2f22af0365",
       "EntityType": "16c27c8a-7562-43de-b4ba-0f0f4a212ad6",
       "HandledEvents": [
         "VotingPrepareAssignmentBlockCompleteAssignment"
@@ -60,7 +59,6 @@
       "$type": "Sungero.Metadata.AssignmentBlockMetadata, Sungero.Workflow.Shared",
       "NameGuid": "96609994-f46d-47a9-bd97-fe4909ecd123",
       "Name": "VotingAssignmentBlock",
-      "BaseGuid": "9cc122a7-f93b-4053-9219-cd2f22af0365",
       "EntityType": "8075e5bb-ba8b-4bbd-859a-b0b4ede0d780",
       "HandledEvents": [
         "VotingAssignmentBlockStartAssignment",
@@ -72,7 +70,6 @@
       "$type": "Sungero.Metadata.NoticeBlockMetadata, Sungero.Workflow.Shared",
       "NameGuid": "0bf61562-9eab-4f47-8c83-42a22764b38f",
       "Name": "VotingNotificationBlock",
-      "BaseGuid": "104c3e36-09a6-4075-ac24-9ad050d5720c",
       "EntityType": "da769124-9cfa-43e6-aea3-62ac4dad55d3",
       "HandledEvents": [
         "VotingNotificationBlockStartNotice",
@@ -203,6 +200,7 @@
       ]
     }
   ],
+  "FormViewUuid": "caee18b0-6297-4214-9329-3258dc601fc5",
   "HandledEvents": [
     "BeforeStartServer"
   ],
@@ -309,7 +307,7 @@
   "Versions": [
     {
       "Type": "TaskMetadata",
-      "Number": 3
+      "Number": 4
     },
     {
       "Type": "WorkflowEntityMetadata",

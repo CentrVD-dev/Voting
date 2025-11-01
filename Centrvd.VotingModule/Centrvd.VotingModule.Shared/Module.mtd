@@ -8,7 +8,6 @@
       "$type": "Sungero.Metadata.TaskBlockMetadata, Sungero.Workflow.Shared",
       "NameGuid": "f799224d-5c6c-4dc3-8041-6bbba48ac71e",
       "Name": "TaskBlock",
-      "BaseGuid": "af11beb2-61e1-453f-9c69-93b9f06355ec",
       "EntityType": "3e766f58-5c7d-4876-8535-2d16d4de98cf",
       "HandledEvents": [
         "TaskBlockStartTask",
@@ -119,7 +118,6 @@
   "HandledEvents": [
     "InitializingServer"
   ],
-  "IconResourcesKeys": [],
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "Centrvd.VotingModule",
@@ -132,7 +130,6 @@
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "Centrvd.VotingModule",
-  "ResourcesKeys": [],
   "ServerAssemblyName": "Centrvd.VotingModule.Server",
   "ServerNamespace": "Centrvd.VotingModule.Server",
   "SharedAssemblyName": "Centrvd.VotingModule.Shared",
@@ -143,7 +140,7 @@
   "Versions": [
     {
       "Type": "ModuleMetadata",
-      "Number": 9
+      "Number": 11
     },
     {
       "Type": "DomainApi",

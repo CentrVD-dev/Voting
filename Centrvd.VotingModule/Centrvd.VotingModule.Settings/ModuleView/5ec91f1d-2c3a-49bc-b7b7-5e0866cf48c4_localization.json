@@ -1,5 +1,10 @@
 {
+  "_Description_75e1bd7d42df420f83d60f9907f15f26": {
+    "en-US": "The module for setting up and organizing voting in business processes.",
+    "ru-RU": "Модуль для настройки и организации голосований в бизнес-процессах."
+  },
   "_Title_75e1bd7d42df420f83d60f9907f15f26": {
+    "en-US": "Voting",
     "ru-RU": "Голосование"
   },
   "Action_Description_22ab759378254cdc8c0d5ce72c8f0923": {

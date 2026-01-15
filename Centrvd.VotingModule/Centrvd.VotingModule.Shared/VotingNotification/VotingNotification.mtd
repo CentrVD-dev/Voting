@@ -165,6 +165,7 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotingNotification",
   "IsVisibleThreadText": true,
+  "ListViewUuid": "95b7d827-2439-46fb-9fa7-fcc86aa05002",
   "NeverLinkToParentWhenCreated": true,
   "OperationsClass": "",
   "Properties": [

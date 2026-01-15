@@ -209,6 +209,7 @@
   "IntegrationServiceName": "VotingModuleVotingTask",
   "IsVisible": false,
   "IsVisibleThreadText": true,
+  "ListViewUuid": "ad470136-4fb3-42f7-b534-5236cef7e488",
   "NeverLinkToParentWhenCreated": true,
   "OperationsClass": "",
   "Overridden": [

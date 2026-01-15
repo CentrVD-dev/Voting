@@ -1,0 +1,26 @@
+select
+    case 
+        when res2.name is not null then concat(res1.name, ' за ', res2.name)
+        else res1.name
+    end as voter,
+    v.name as vote,
+    coalesce(vr.comment, '') as comment,
+    vr.pointid as decisionid,
+    vr.text as decision,
+    (
+        select string_agg(vote_info, ', ')
+        from (
+            select v2.name || ' - ' || count(*)::text as vote_info
+            from centrvd_votingm_votingtaskvoti as vr2
+            join centrvd_votingm_votekind as v2 on v2.id = vr2.vote
+            where vr2.pointid = vr.pointid and vr2.task = @taskid
+            group by v2.name, v2.id
+            order by v2.id
+        ) as sub
+    ) as summary
+from centrvd_votingm_votingtaskvoti as vr
+join sungero_core_recipient as res1 on res1.id = vr.voter
+left join sungero_core_recipient as res2 on res2.id = vr.substituted
+join centrvd_votingm_votekind as v on v.id = vr.vote
+where vr.task = @taskid
+order by vr.pointid, voter

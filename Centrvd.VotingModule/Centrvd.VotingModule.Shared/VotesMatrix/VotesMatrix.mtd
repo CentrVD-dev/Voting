@@ -106,6 +106,7 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleAnswerOption",
   "IsStatusEnabled": true,
+  "ListViewUuid": "f20c9bb9-e109-4e40-aab7-add5d560a6a7",
   "OperationsClass": "",
   "Overridden": [
     "IsStatusEnabled",

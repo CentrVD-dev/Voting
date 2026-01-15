@@ -87,6 +87,7 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVoteKind",
   "IsStatusEnabled": true,
+  "ListViewUuid": "b8643318-14de-4b33-9cbe-44845df58eed",
   "LookupMode": "Popup",
   "OperationsClass": "",
   "Overridden": [

@@ -223,6 +223,7 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotingAssignment",
   "IsVisibleThreadText": true,
+  "ListViewUuid": "26ca9ed1-2450-4081-94e0-36608807ba57",
   "NeverLinkToParentWhenCreated": true,
   "OperationsClass": "",
   "Overridden": [

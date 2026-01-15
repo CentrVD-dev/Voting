@@ -255,6 +255,7 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotingPrepareAssignment",
   "IsVisibleThreadText": true,
+  "ListViewUuid": "f6a2de0a-e46c-4b4b-81e8-6898ca09cdfd",
   "NeverLinkToParentWhenCreated": true,
   "OperationsClass": "",
   "Overridden": [

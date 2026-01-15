@@ -142,6 +142,7 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "VotingModuleVotersMatix",
   "IsStatusEnabled": true,
+  "ListViewUuid": "815688fc-0504-48a0-b168-7581db3f8285",
   "OperationsClass": "",
   "Overridden": [
     "IsStatusEnabled",

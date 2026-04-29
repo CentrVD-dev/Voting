@@ -16,18 +16,27 @@ namespace Centrvd.VotingModule.Server.VotingTaskBlocks
       // Сформировать результаты отчетом и приложить к уведомлению
       if (_block.FormResultsInReport.GetValueOrDefault())
       {
-        var report = Centrvd.VotingModule.Reports.GetVotingResultsReport();
-        report.Entity = _obj;
-        
-        var simpleDocument = Sungero.Docflow.SimpleDocuments.Create();
-        simpleDocument.Name = Centrvd.VotingModule.Reports.Resources.VotingResultsReport.TitleTitle;
-        simpleDocument.Save();
-        report.ExportTo(simpleDocument);
-        
-        if (_obj.ReportGroup.OfficialDocuments.Any())
-          _obj.ReportGroup.OfficialDocuments.Clear();
-        
-        _obj.ReportGroup.OfficialDocuments.Add(simpleDocument);
+        try
+        {
+          var report = Centrvd.VotingModule.Reports.GetVotingResultsReport();
+          report.Entity = _obj;
+          
+          var simpleDocument = Sungero.Docflow.SimpleDocuments.Create();
+          
+          simpleDocument.Name = Centrvd.VotingModule.Reports.Resources.VotingResultsReport.TitleTitle;
+          simpleDocument.Save();
+          report.ExportTo(simpleDocument);
+          
+          if (_obj.ReportGroup.OfficialDocuments.Any())
+            _obj.ReportGroup.OfficialDocuments.Clear();
+          
+          _obj.ReportGroup.OfficialDocuments.Add(simpleDocument);
+        }
+        catch (Exception ex)
+        {
+          Logger.ErrorFormat("Ошибка формирования отчета в VotingNotificationBlockStart. Голосование: {0}. Ошибка: {1}", _obj.Id, ex);
+          throw AppliedCodeException.Create("Ошибка формирования отчета.", ex);
+        }
       }
     }
 

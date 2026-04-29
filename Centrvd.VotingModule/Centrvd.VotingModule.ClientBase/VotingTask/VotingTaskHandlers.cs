@@ -9,7 +9,6 @@ namespace Centrvd.VotingModule
 {
   partial class VotingTaskClientHandlers
   {
-
     public virtual void ResponsibleValueInput(Centrvd.VotingModule.Client.VotingTaskResponsibleValueInputEventArgs e)
     {
       if (!Equals(e.NewValue, e.OldValue) && e.NewValue != null)

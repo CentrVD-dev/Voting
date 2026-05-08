@@ -1,0 +1,15 @@
+{
+  "Description": {},
+  "MainPage_Title_de4b744fc65942fba52c66a884ee4851": {
+    "en-US": "Properties",
+    "ru-RU": "Свойства"
+  },
+  "MatrixCommands_Caption_b58d8d67df2e450c9bf2845936093932": {
+    "en-US": "Matrix",
+    "ru-RU": "Матрицы"
+  },
+  "Name": {
+    "en-US": "Vote Kind",
+    "ru-RU": "Вид голоса"
+  }
+}
